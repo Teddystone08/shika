@@ -1,0 +1,219 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+    
+}
+.icon{
+    margin-top: 100% ;
+    margin-left: 40%;
+    
+}
+.tb{
+    border: 2px solid yellowgreen;
+    width: 28%;
+    height: 100vh;
+    background-color: yellowgreen;
+    margin: 15px;
+}
+
+.front{
+    text-align: center;
+    width: 400px;
+    background-image: url(./images/shika_bk.png);
+    border: 2px solid greenyellow;
+    height: 600px;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin: 20px;
+    
+    
+}
+
+input[type=button]{
+    display: flex;
+    height: 150px;
+    width: 200px;
+    margin: 50px 95px;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(4, 44, 4);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.title{
+   
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+ 
+/*forms*/
+form{
+    margin: 15px;
+    background-image: url(./images/shika_bk.png);
+    width: 77%;
+    color: rgb(4, 44, 4);
+    height: auto;
+    border-radius: 10px;
+}
+
+label{
+    float: left;
+    width: 150px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+
+input[type=number]{
+    margin: 10px;
+    height: 30px;
+    text-align: right;
+    width: auto;
+    border:3px solid rgb(192, 233, 192) ;
+    border-radius: 20px;
+
+}
+
+ input[type=date]{
+     height: 30px;
+     border: 3px solid rgb(192, 233, 192);
+     border-radius: 20px;
+     width: 160px;
+     text-align: center;
+ }
+
+ select{
+     height: 30px;
+     width: 150px;
+     border: 3px solid rgb(192, 233, 192);
+     border-radius: 5px;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ input[type=checkbox] select{
+     font-size: 30px;
+     font-weight: bold;
+     color: red;
+     height: 25px;
+     width: 25px;
+     margin: 10px;
+
+
+ }
+ .down{
+     color: red;
+     font-size: 20px;
+ }
+
+ .top{
+     font-size: 25px;
+     font-style: italic;
+     text-shadow: 5px 5px 5px;
+ }
+ 
+ 
+ input[type=submit]{
+     width: 90px;
+     height: 40px;
+     margin: 5px;
+     border: 2px solid rgb(192, 233, 192);
+     border-radius: 10px;
+     font-size: 20px;
+     font-weight: bold;
+     color: rgb(167, 221, 167);
+     background-color: rgb(4, 44, 4);
+
+
+ }
+ .log{
+     margin-top: 3px;
+     width: 100px;
+     height: 100px;
+     border-radius: 100px;
+ }
+ .loan{
+     display: none;
+ }
+
+ button{
+     width: 230px;
+     height: 150px;
+     border: 3px solid rgb(192, 233, 192) ;
+     border-radius: 15px;
+     background-color: rgb(26, 29, 26);
+     color: rgb(192, 233, 192) ;
+     font-size: 20px;
+     font-weight: bold;
+     
+ }
+ .add{
+     width: 20px;
+     border-radius: 50px;
+ }
+
+input:placeholder-shown{
+    text-align: center;
+}
+ 
+
+
+
+@media (max-width:840px) {
+
+    .tb{
+        width:100%;
+    }
+        
+    
+    .icon{
+        margin-top: 130%;
+        margin-left: 100%;
+    }
+    
+    img{
+        width: 80%
+
+    }
+    #page{
+        width: 100%;
+    }
+    .front{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .tb{
+        width:100%;
+    }
+        
+    
+    .icon{
+        margin-top: 130%;
+        margin-left: 100%;
+    }
+    
+    img{
+        width: 80%
+
+    }
+    #page{
+        width: 100%;
+    }
+    .front{
+        width: 100%;
+    }
+    
+}

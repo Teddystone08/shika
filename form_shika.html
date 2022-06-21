@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shika.css">
+    <title>Calculator</title>
+</head>
+
+<body align="center">
+    <form>
+        <table>
+            <tr>
+                <th class="top">Net Calculator</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/shika_logo.png" class="log">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bsal">Salary:</label>
+                    <input type="number" id="bsal" placeholder="basic salary">
+                </td>
+            <tr>
+                <td>
+                    <label for="ashift">Afternoon shift points:</label>
+                    <input type="number" id="ashift" placeholder="total points">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hday">Holiday hours:</label>
+                    <input type="number" id="hday" placeholder=" total hours">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nshift">Night shift points:</label>
+                    <input type="number" id="nshift" placeholder="total hours">
+                </td>
+            <tr>
+                <td>
+                    <label for="satday">Saturday hours:</label>
+                    <input type="number" id="satday" placeholder="total hours">
+                </td>
+            <tr>
+                <td>
+                    <label for="Sday">Sunday hours:</label>
+                    <input type="number" id="sday" placeholder="total hours">
+                </td>
+            <tr>
+                <td>
+                    <label for="wkday">Weekday OT hours:</label>
+                    <input type="number" id="wkday" placeholder="total OT hours">
+                </td>
+                <tr>
+                    <td>
+                        <label for="contri">E.A. contribution</label>
+                        <input type="number" id="assoc" placeholder="monthly contribution">
+                   </td>
+                </tr>
+            </tr>
+            </tr>
+            </tr>
+            </tr>
+            </tr>
+            <tr>
+                <th class="down">Please check to include loan deduction </th>
+            </tr>
+            <tr>
+                <td align="center">
+                    
+                    <input type="checkbox" id="ch" value="Loan">Loan <input type="submit" value="+" class="add">
+                </td>
+            </tr>
+            
+        
+        </table>
+        <table class="loan">
+            <tr>
+                <td>
+                    <select>
+                        <option>choose loan Type</option>
+                        <option>Cash loan</option>
+                        <option>Hire purchase</option>
+                        <option>School fees</option>
+                        <option>Hire purchase</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="amt">Amount:</label>
+                    <input type="number" id="lamt" placeholder="total amount taken">
+                </td>
+            <tr>
+                <td>
+                    <label for="Duration">Duration:</label>
+                    <input type="number" id="due" placeholder="total months to make pay">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="intdate">Initial payment date</label>
+                    <input type="date" id="date">
+                </td>
+            </tr>
+            </tr> 
+
+            
+
+        </table>
+    
+                               
+                <input type="submit"  onclick= "data()"> <input type="submit" value="Cancel">                     
+           
+        
+    </form>
+
+<script src="shika.js"></script>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
