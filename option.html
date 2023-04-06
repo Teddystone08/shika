@@ -5,57 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme_colour" content="rgb(4, 44, 4)">
-    <link rel="stylesheet" href="shika.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/option.css">
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="images/">
     <title>Welcome_option</title>
 </head>
-<body id="page">
+<body>
        
-    <table class="front">
-        <tr>
-            <td>
-                <header>
-                    <img src="./images/shika_logo smal.png" alt="logo" class="log">
-                </header>
+    <div class= "container-fluid">
+        <div class="content">
+            <div id="logo_min">
+                <img src="./images/shika_logo_b.png" alt="logo">
+            </div>
 
-            </td>
+            <div id="opt_state">
+                <p>
+                    <h3>Choose Your Option</h3>
+                </p>
+            </div>
 
-        </tr>
-        <tr>
-            
-             <th class="title">Please select your option</th>
-            
-        </tr>
-            <tr>
-            <td>
-                <tr>
-                    <td> 
-                        <button type="submit"  id="net" onclick="myNextpage()">NET CALCULATOR</button>
-                        
-                    </td>
-                    <tr>
+            <div id="clicks">
+                <div class="cl_cba">
+                    <button value="CBA" class="button">CBA</button>
+                </div>
+                <div class="cl_loan">
+                    <button value="Loan Calculator" class="button">Loan Calculator</ibutton>
 
-                        <td>
-                            <button type="submit" id="loan" onclick="myNextpageSec()">LOAN CALCULATOR</button>
-                        </td>
+                </div> 
+                <div class="cl_net">
+                    <button value="Net Calculaor" class="button">Net Calculator</button>
+
+                </div> 
+                <div class="ctor">
+                    <p>
+                        <h5>Powered by Gigtrend Tech</h5>
+                    </p>
+                </div>              
+                
+                
+            </div>
+
+        </div>
+
+
+    </div>
+        
+
+
     
-                    </tr>               
-                        
-                   
-            
-
-                </tr>  
-                            
-
-            </td>
-        </tr>                     
-
-        </table>
-    <script src="shika.js">
-
-
-    </script> 
    
 </body>
 </html>

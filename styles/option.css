@@ -1,0 +1,42 @@
+.container-fluid{
+    position: relative;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#logo_min img{
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    left: 45%;
+}
+
+
+#opt_state{
+    position: absolute;
+    top: 210px;
+    left: 45%;
+}
+#clicks div{
+    width: auto;
+    top: 50px;
+    left: 50%;
+    flex-direction: column;
+    display: flex;
+
+}
+
+
+
+@media screen and  (min-width: 320px) {
+    
+        
+    }
+
+    
+}
+
