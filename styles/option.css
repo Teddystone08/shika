@@ -1,42 +1,45 @@
-.container-fluid{
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
+    overflow: hidden;
+}
+h3{
+    color: darkgreen;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-
+.container #f_logo{
+    width: 20vh;
+    margin-top: 20px;
 }
 
-#logo_min img{
-    width: 150px;
-    position: absolute;
-    top: 40px;
-    left: 45%;
+.button{
+    width: 50vh;
+    height: 15vh;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 1px 0px 10px darkgreen;
+    margin-bottom: 7px;
+    background-color: darkgreen;
+    color: darkgoldenrod;
+
 }
-
-
-#opt_state{
-    position: absolute;
-    top: 210px;
-    left: 45%;
-}
-#clicks div{
-    width: auto;
-    top: 50px;
-    left: 50%;
-    flex-direction: column;
-    display: flex;
-
+.button:hover{
+    border: 2px solid darkgoldenrod;
 }
 
 
-
-@media screen and  (min-width: 320px) {
-    
-        
-    }
-
-    
+.ctor{
+    text-align: center;
+    margin-top: 0px;
+    color: darkgreen;
 }
 

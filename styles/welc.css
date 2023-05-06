@@ -1,35 +1,27 @@
-.container-fluid{
-   position: relative;
-   
-
-}
-#header img{
-    position: absolute;
-    width: 30%;
-    top: 100px;
-    left: 35%; 
-    z-index: 1;
-   
-   
-}
-
-#logo img{
-    position: absolute;
-    width: 25%;
-    top: 150px;
-    left: 35%;    
-
-}
-@media  screen and (min-width: 320px) {
-    #header img{
-        width: 70%;
-        left: 15%;
-        top: 120px;
-    }
-
-    #logo img{
-        width: 60%;
-        left: 17%;
-    }
+.container{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
     
+}
+.content{
+    margin: 0;
+}
+.content #header{
+    width: 50vh;
+    height: 15vh;
+    position:absolute;
+
+    
+}
+
+.content #logo{
+    width: 50vh;
+    
+
 }

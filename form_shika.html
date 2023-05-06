@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shika.css">
-    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="/shika/js/jquery-3.6.4.js"></script>
+    <title>dataform</title>
 </head>
+<body>
+    <div data-role="page" class="page">
 
-<body align="center">
-    <form name="income">
-        <table>
-            <tr>
-                <th class="top">Net Calculator</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./images/shika_logo.png" class="log">
-                </td>
-            </tr>
-            <tr>
-                <td class="bs" align="center">
-                    <h3>Basic Salary</h3>
-                   
-                </td>
-            <tr>
-                <tr>
-                    <td class="btext" align="center">
-                        <input type="number" id="bsal" placeholder="basic salary">
-                    </td>
-                </tr>
-                <td>
-                    <label for="ashift">Afternoon shift points:</label>
-                    <input type="number" id="ashift" placeholder="total points">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="hday">Holiday hours:</label>
-                    <input type="number" id="hday" placeholder=" total hours">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="nshift">Night shift points:</label>
-                    <input type="number" id="nshift" placeholder="total hours">
-                </td>
-            <tr>
-                <td>
-                    <label for="satday">Saturday hours:</label>
-                    <input type="number" id="satday" placeholder="total hours">
-                </td>
-            <tr>
-                <td>
-                    <label for="Sday">Sunday hours:</label>
-                    <input type="number" id="sday" placeholder="total hours">
-                </td>
-            <tr>
-                <td>
-                    <label for="wkday">Weekday OT hours:</label>
-                    <input type="number" id="wkday" placeholder="total OT hours">
-                </td>
-                <tr>
-                    <td>
-                        <label for="contri">E.A. contribution</label>
-                        <input type="number" id="assoc" placeholder="monthly contribution">
-                   </td>
-                </tr>
-            </tr>
-            </tr>
-            </tr>
-            </tr>
-            </tr>
-            <tr>
-                <th class="down">Please check to include loan deduction </th>
-            </tr>
-            <tr>
-                <td align="center">
-                    
-                    <input type="checkbox" id="ch" value="Loan">Loan <input type="submit" value="+" class="add">
-                </td>
-            </tr>
-            
+        <div data-role="header" class="head">
+        <div>
+            <h3>Income</h3>
+        </div>
         
-        </table>
-        <table class="loan">
-            <tr>
-                <td>
-                    <select>
-                        <option>choose loan Type</option>
-                        <option>Cash loan</option>
-                        <option>Hire purchase</option>
-                        <option>School fees</option>
-                        <option>Hire purchase</option>
 
-                    </select>
-                </td>
+    </div>
 
-            </tr>
-            <tr>
-                <td>
-                    <label for="amt">Amount:</label>
-                    <input type="number" id="lamt" placeholder="total amount taken">
-                </td>
-            <tr>
-                <td>
-                    <label for="Duration">Duration:</label>
-                    <input type="number" id="due" placeholder="total months to make pay">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="intdate">Initial payment date</label>
-                    <input type="date" id="date">
-                </td>
-            </tr>
-            </tr> 
+    <div data-role="main" class="ui-content">
+        <form action="">
+            <fieldset class="bs">
+            <legend>Basic salary</legend>
+            <p>
+                <input type="number" required id="bs">
+            </p>
+            </fieldset>
 
+            <fieldset class=" allow">
+            <legend>Allowance</legend>
+            <p>
+                <label for="">Afternoon Shift points: </label>
+                <input type="number" id="Afternoon" class="points">
+            </p>
+            <p>
+                <label for="">Night shift points:</label>
+                <input type="number" id="night" class="points">
+
+            </p>
+            <p>
+                <label for="wkday">Weekday OT hours:</label>
+                <input type="number" id="weekday" class="days" >
+            </p>
+            <p>
+                <label for="satday">Saturday OT hours:</label>
+                <input type="number" id="satday" class="days">
+            </p>
+            <p>
+                <label for="sunday">Sunday OT hours:</label>
+                <input type="Number" id="sday" class="days">
+            </p>
+            <p>
+                <label for="hday">Holiday:</label>
+                <input type="number" id="hday" class="days">
+            </p>
+
+            </fieldset>
+
+            <fieldset class="others">        
+                <h4>Please select to add other deductions</h4>
+                <input type="radio" value= No name = "Loans" id="loan" class="deduct">Loan               
+            </fieldset>
             
+            <fieldset class="loan">
+                <legend>Loans</legend>
+                <h4>Select loan type</h4>
+                <select>
+                    <option value="cash">Cash Loan</option>
+                    <option value="Hire">Hire purchase</option>
+                    <option value="sfee">School fees</option>
+                    <option value="qcash">Quick Cash</option>
+                </select>
+                <p>
+                    <label for="rm">Amount:</label>
+                    <input type="number" id="lamt" class="loan">
+                </p>
+                <p>
+                    <label for="due">Duration:</label>
+                    <input type="number" id="ldue" class="loan">
+                </p>
+                <p>
+                    <label for="initdate">Initial date:</label>
+                    <input type="date" id="sdate" class="loan">
+                </p>                
+            </fieldset>
+        </form>
 
-        </table>
+        <div class="ui-btn">
+            <button class="sub">Submit</button>    
+            <button class="can">Cancel</button>
+        </div>
+
+    </div>
+    <div data-role="footer" class="footer">
+        <nav>
+            <ul>
+                <li><a href="./option.html">Home</a></li>
+                <li><a href="#">Net calculator</a></li>
+                <li><a href="http://">Loan budget</a></li>
+                <li><a href="#">CBA</a></li>
+            </ul>
+        </nav>
+    </div>
     
-                               
-                <input type="submit"  onclick= "formValidation()"> <input type="submit" value="Cancel">                     
-           
-        
-    </form>
 
-<script src="shika.js"></script>
 
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#loan").click(function(){
+                $(".loan").slideToggle(2000);
+            })
+        })
+
+        $(document).ready(function(){
+            $(".sub").click(function(){
+                alert()
+            })
+        })
+
+
+    </script>
+    <script src="./js/funct.js"></script>
+    
 </body>
-<footer>
-
-</footer>
-
 </html>
