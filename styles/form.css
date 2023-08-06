@@ -1,58 +1,83 @@
-body{
+.container{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.head div{
-    height: 50px;
-    border-bottom: 2px solid darkgoldenrod;
-    box-shadow: 0px 0px 10px;
-    text-align: center;
-    
-}
-
-
-/* forms */
-
-fieldset{
-    width: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 20px;
-    border: none;
+    justify-content: center;
+}
+.head{
+    height: 50px;
+    width: 65vh;
+    border-bottom: 2px solid darkgoldenrod;
+    box-shadow: 0px 0px 10px;
+    text-align: center;    
+}
+.head h3{
+    margin-top: 8px;
+}
+
+/* forms */
+
+.bs{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form{
+    height: auto;
+    box-shadow: 0px 0px 10px;
     margin: 12px;
-    padding: 10px;
+    width: 65vh;
+}
+
+fieldset{    
+    border: none;
+    margin: 8px;
+    padding: 15px;
+    height: auto;
+    
 }
 
 legend{
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+   
 }
 
 label{
-    float: left;
-    width: 150px;
+    width: 180px;
     text-align: left;
     font-size: 15px;
     font-weight: bold;
-    margin: 10px;
+    
     
 }
+
+p{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
 
 input[type=number]{
     margin: 10px;
     height: 30px;
-    text-align: right;
-    width: auto;
     border: none;
     box-shadow: 0px 0px 5px;
     border-radius: 20px;
+    width: 20vh;
+
+}
+.points{
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
 
 }
 
@@ -61,12 +86,10 @@ input[type=number]{
      border: none;
      box-shadow: 0 0 5px;
      border-radius: 20px;
-     width: 170px;
+     width: 150px;
      text-align: center;
      margin: 7px;
  }
-
-
 
  select{
      height: 30px;
@@ -77,12 +100,22 @@ input[type=number]{
      text-align: center;
      font-weight: bold;
      margin: 10px;
+     
  }
+.others{
+    width: 61vh;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px;
+
+}
+
 
 
 .loan{
+    text-align: center;
+    display: none;
    
-   display: none;
 }
 
 button{
@@ -94,7 +127,7 @@ button{
     color: darkgreen;
     border-radius: 10px;
     border: none;
-    
+    margin: 15px;    
 
  }
 
@@ -106,17 +139,21 @@ button{
  
 
 /**Footer**/
+
+footer{
+    width: cover;
+    position: sticky;
+}
+
 nav a{
     text-decoration: none;
-    line-height: 10px;
+        
 }
 
 nav li{
-    list-style-type: none;
-    display: inline-flex;  
-    margin-top: 10px; 
-    padding: 10px;
+    list-style-type: none;  
     font-weight: 20px;
+    font-size: 16px;    
 }
 
 nav li:hover a{
@@ -126,11 +163,9 @@ nav li:hover a{
     
 }
 nav {
-    margin: 10px;
     height: 50px;
     border-top:2px solid darkgoldenrod ;
     box-shadow: 0px 0px 10px;
-    position: sticky;
-    z-index: 2;
     padding: 10px;
+    width: 62vh;
 }

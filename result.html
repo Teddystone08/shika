@@ -4,52 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shika.css">
+    <link rel="stylesheet" href="./styles/results.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" 
+    crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.4.js"></script>
     <title>Income</title>
 </head>
-<body>
+<body class="container">
     
     <form>
-        
-        <p id="result"></p>
-        <input type="text" readonly class="bsal">
+
+        <fieldset>
+        <legend>SUMMARY</legend>
+        <p class="result" id="result">
+        <input type="text" readonly class="output">
+        </p>
         
 
         <p>
         <label id="ashift"></label>
-        <input type="text" readonly class="ashift">
+        <input type="text" id="out_ashift" class="output" readonly>
         </p>
         
         <p>
-        <label id="hday">:</label>
-        <input type="text" readonly class="hday">
+        <label id="hday"></label>
+        <input type="text" id="out_hday" readonly class="output">
         </p>
 
         <p>
-        <label id="nshift">:</label>
-        <input type="text" readonly class="nshift">
+        <label id="nshift"></label>
+        <input type="text" id="out_nshift"  readonly class="output">
         </p>
         <p>
-            <label id="satday">:</label>
-            <input type="text" readonly class="satday">
+            <label id="satd"></label>
+            <input type="text" id="out_satd" readonly class="output">
 
         </p>
         <p>
             <label id="sday"></label>
-            <input type="text" readonly class="sday">
+            <input type="text" id="out_sday" readonly class="output">
         </p>
         <p>
             <label id="wkday"></label>
-            <input type="text" readonly class="wkday">
+            <input type="text" id="out_wkd" readonly class="output">
         </p>
         <p>
             <label id="ea"></label>
-            <input type="text" readonly class="ea">
+            <input type="text" id="out_ea" readonly class="output">
         </p>
-        
-        
-    
+
+        <div class="btn">
+            <input type="button" value="OK" name="btn_Ok">
+        </div> 
+
+        </fieldset>
+            
     </form>
-    <script src="shike.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".output").remove("text", function(){
+                    window.location.href = "option.html"
+                })
+            })
+        })
+    </script>
+    <script src="./js/General.js"></script>
+    <script src="./js/funct.js"></script>
 </body>
 </html>

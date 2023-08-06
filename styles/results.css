@@ -1,0 +1,72 @@
+.container{
+    margin-top: 50px;
+    height: auto;
+    width: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+form{
+    height: auto;
+    width: auto;
+    background-color: aquamarine;    
+   
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    height: 20px;
+    width: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+.output{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px opx 5px;
+    font-size: 17px;
+    color: darkgreen;
+    text-align: right;
+    
+}
+
+.btn{
+    margin-top: 40px;
+}
+
+input[type=button]{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: darkgreen; 
+    color: azure;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label{
+    border: red 1px solid;
+    height: 30px;
+    width: 200px;
+    justify-content: right;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}

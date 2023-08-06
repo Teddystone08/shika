@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="/shika/js/jquery-3.6.4.js"></script>
     <title>dataform</title>
 </head>
-<body>
-    <div data-role="page" class="page">
-
-        <div data-role="header" class="head">
-        <div>
-            <h3>Income</h3>
-        </div>
-        
-
+<body class="container">
+    <div class="head">
+        <h3>ALLOWANCE FORM</h3>
     </div>
 
-    <div data-role="main" class="ui-content">
-        <form action="">
-            <fieldset class="bs">
+        <form action="post">
+            <fieldset>
             <legend>Basic salary</legend>
             <p>
-                <input type="number" required id="bs">
+                <input type="number" required id="bs" class="bs">
             </p>
             </fieldset>
 
@@ -42,37 +36,44 @@
             </p>
             <p>
                 <label for="wkday">Weekday OT hours:</label>
-                <input type="number" id="weekday" class="days" >
+                <input type="number" id="weekday" class="points" >
             </p>
             <p>
                 <label for="satday">Saturday OT hours:</label>
-                <input type="number" id="satday" class="days">
+                <input type="number" id="satday" class="points">
             </p>
             <p>
                 <label for="sunday">Sunday OT hours:</label>
-                <input type="Number" id="sday" class="days">
+                <input type="Number" id="sday" class="points">
             </p>
             <p>
                 <label for="hday">Holiday:</label>
-                <input type="number" id="hday" class="days">
+                <input type="number" id="hday" class="points">
             </p>
 
             </fieldset>
+            </form>
 
             <fieldset class="others">        
                 <h4>Please select to add other deductions</h4>
                 <input type="radio" value= No name = "Loans" id="loan" class="deduct">Loan               
             </fieldset>
-            
+            <form action="post">
+
             <fieldset class="loan">
                 <legend>Loans</legend>
-                <h4>Select loan type</h4>
+                
+                <div class="selector">
+                    <h4>Select loan type</h4>
                 <select>
                     <option value="cash">Cash Loan</option>
                     <option value="Hire">Hire purchase</option>
                     <option value="sfee">School fees</option>
                     <option value="qcash">Quick Cash</option>
                 </select>
+
+                </div>
+
                 <p>
                     <label for="rm">Amount:</label>
                     <input type="number" id="lamt" class="loan">
@@ -94,7 +95,7 @@
         </div>
 
     </div>
-    <div data-role="footer" class="footer">
+    <div class="footer">
         <nav>
             <ul>
                 <li><a href="./option.html">Home</a></li>
@@ -111,7 +112,7 @@
     <script>
         $(document).ready(function(){
             $("#loan").click(function(){
-                $(".loan").slideToggle(2000);
+                $(".loan").slideToggle(1000);
             })
         })
 
@@ -123,7 +124,8 @@
 
 
     </script>
-    <script src="./js/funct.js"></script>
+    <script src="./js/General.js"></script>
+    
     
 </body>
 </html>
