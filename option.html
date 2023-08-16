@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,55 +10,41 @@
     <link rel="stylesheet" href="./styles/option.css">
     <title>option</title>
 </head>
+
 </html>
-<body class ="container">               
-            <div>
-                <img src="./images/shika_logo_b.png" alt="logo" id="f_logo">
-            </div>
 
-            <div>
-                <p>
-                    <h3>Choose Your Option</h3>
-                </p>
-            </div>
+<body>
+    <div class="container" id="option">
+        <div>
+            <img src="./images/shika_logo_b.png" alt="logo" id="f_logo">
+        </div>
 
-            <div class ="clicks">
-                <div>
-                    <button value="CBA" class="button" id="cba">CBA</button>
-                </div>
+        <div>
+            <p>
+            <h3>Choose Your Option</h3>
+            </p>
+        </div>
 
-                <div>
-                    <button value="Loan Calculator" class="button" id="loan">Loan Calculator</button>
-                </div> 
+        <div>
+            <button value="CBA" class="button" id="cba">CBA</button>
+        </div>
 
-                <div>
-                    <button value="Net Calculaor" class="button" id="Net">Net Calculator</button>
-                </div> 
+        <div>
+            <button value="Loan Calculator" class="button" id="loan">Loan Calculator</button>
+        </div>
 
-                <div class="ctor">                    
-                        <h5>Powered by Gigtrend Tech</h5>
-                </div>              
-          </div>    
-   <script>
-   $(document).ready(function(){
-    $("#cba").click(function(){
-        window.location.href="cba.html"
-    })
-   });
+        <div>
+            <button value="Net Calculaor" class="button" id="Net">Net Calculator</button>
+        </div>
 
-   $(document).ready(function(){
-    $("#loan").click(function(){
-        window.location.href="calculate.html"
-    })
-   });
+        <div class="ctor">
+            <h5>Powered by Gigtrend Tech</h5>
+        </div>
 
-   $(document).ready(function(){
-    $("#Net").click(function(){
-        window.location.href="form_shika.html"
-    })
-   });
+    </div>
 
+    <script src="/js/funct.js"></script>
 
-   </script>
 </body>
+
 </html>

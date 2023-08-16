@@ -11,7 +11,8 @@
 form{
     height: auto;
     width: auto;
-    background-color: aquamarine;    
+    background-color: aquamarine;  
+    box-shadow: 5px 5px 10px;  
    
 }
 
@@ -30,10 +31,6 @@ p{
 
 }
 
-.result{
-    display: flex;
-    justify-content: center;
-}
 
 .output{
     height: 30px;
@@ -48,6 +45,7 @@ p{
 
 .btn{
     margin-top: 40px;
+    
 }
 
 input[type=button]{
@@ -59,7 +57,9 @@ input[type=button]{
     color: azure;
     font-size: 20px;
     font-weight: bold;
+  
 }
+
 
 label{
     border: red 1px solid;

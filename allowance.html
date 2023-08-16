@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
+    <script src="/shika/js/jquery-3.6.4.js"></script>
+    <title>dataform</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="head">
+            <h3>ALLOWANCE FORM</h3>
+        </div>
+
+        <form action="post" id="Allowance">
+            <fieldset>
+                <legend>Basic salary</legend>
+                <p>
+                    <input type="number" required id="bs" class="bs">
+                </p>
+            </fieldset>
+
+            <fieldset class=" allow">
+                <legend>Allowance</legend>
+                <p>
+                    <label for="">Afternoon Shift points: </label>
+                    <input type="number" id="Afternoon" class="points">
+                </p>
+
+                <p>
+                    <label for="">Night shift points:</label>
+                    <input type="number" id="night" class="points">
+
+                </p>
+
+                <p>
+                    <label for="wkday">Weekday OT hours:</label>
+                    <input type="number" id="weekday" class="points">
+                </p>
+
+                <p>
+                    <label for="satday">Saturday OT hours:</label>
+                    <input type="number" id="satday" class="points">
+                </p>
+
+                <p>
+                    <label for="sunday">Sunday OT hours:</label>
+                    <input type="Number" id="sday" class="points">
+                </p>
+
+                <p>
+                    <label for="hday">Holiday:</label>
+                    <input type="number" id="hday" class="points">
+                </p>
+
+            </fieldset>
+        </form>
+
+        <fieldset class="others">
+            <h4>Please select to add other deductions</h4>
+            <input type="radio" value=No name="Loans" id="loan" class="deduct">Loan
+        </fieldset>
+
+        <form action="post" id="loan_sec">
+
+            <fieldset class="loan">
+                <legend>Loans</legend>
+
+                <div class="selector">
+                    <h4>Select loan type</h4>
+                    <select required>
+                        <option value="cash">Cash Loan</option>
+                        <option value="Hire">Hire purchase</option>
+                        <option value="sfee">School fees</option>
+                        <option value="qcash">Quick Cash</option>
+                    </select>
+
+                </div>
+
+                <p>
+                    <label for="rm">Amount:</label>
+                    <input type="number" id="lamt" class="loan" required>
+                </p>
+                <p>
+                    <label for="due">Duration:</label>
+                    <input type="number" id="ldue" class="loan" required>
+                </p>
+                <p>
+                    <label for="initdate">Initial date:</label>
+                    <input type="date" id="sdate" class="loan" required>
+                </p>
+            </fieldset>
+        </form>
+
+        <div class="button">
+            <input type="submit" id="sub" class="submit">
+            <input type="reset" class="can" id="Cancel">
+        </div>
+
+    </div>
+    <div class="footer">
+        <nav>
+            <ul>
+                <li><a href="/option.html">Home</a></li>
+                <li><a href="/allowance.html">Net calculator</a></li>
+                <li><a href="/loan.html">Loan budget</a></li>
+                <li><a href="#">CBA</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    </div>
+    <script>
+        /*
+        $(document).ready(function(){
+            $("#loan").click(function(){
+                $(".loan").slideToggle(1000);
+            })
+        })
+
+        $(document).ready(function(){
+            $(".sub").click(function(){
+                alert()
+            })
+        })
+        */
+
+
+    </script>
+    <script src="/js/forms.js"></script>
+
+    </div>
+</body>
+
+</html>

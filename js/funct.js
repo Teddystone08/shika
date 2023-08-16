@@ -1,39 +1,31 @@
-function discomfort(){
-    dcom = basic * 15%
-    (dcom)
+export {forms} as js/forms.js
+
+//creating a varible for the buttons ids for option.html
+const btnCba = document.getElementById("cba")
+const btnLn = document.getElementById("loan")
+const btnAll = document.getElementById("Net")
+
+//button function for cba page
+btnCba.addEventListener("click", cbaPage);
+
+function cbaPage(){
+   window.location.href ="Cba.html";
 }
 
-function after_shift(){
-    a_shift = (basic * 3.5 * after)/432.5
-    return a_shift;
+//button function for loan calculation.html
+
+btnLn.addEventListener("click", loanPage);
+
+function loanPage(){
+   window.location.href ="loan.html";
 }
- function night_shift(){
-    n_shift = (basic * 3.5 * night)/216.24
-    return n_shift;
- }
 
- function ot_wkday(){
-    wd_ot = (basic * wk)/173
-    return wd_ot;
- }
+//button function for option.html
+btnAll.addEventListener("click", allowPage);
 
- function ot_holiday() {
-    h_ot = (basic * hday)/173 * 2
-    return h_ot;
-
- }
-
- function ok_clear(){
-   $(document).ready(function(){
-      $("button").click(function (e) { 
-         $("results").remove(".output");
-         e.preventDefault();
-         
-      });
-   })
- }
-
- 
+function allowPage(){
+   window.location.href ="allowance.html";
+}
 
 
 
