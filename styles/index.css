@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gainsboro;
+    
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 30vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    justify-content: baseline;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px darkgrey;
+    border: none;
+    
+}

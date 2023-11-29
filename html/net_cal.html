@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/net.css">
+    <title>Net Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="theme" id="app_bar">
+            <h3>Net Calculator</h3>
+        </div>
+
+        <div class="theme" id="topic">
+            <h4>Net Details</h4>
+        </div>
+
+        <div class="basic" id="sal">
+            <label for="basic">Basic Salary</label>
+            <input class="bs_input1" placeholder="raw salary" required id="basic" value="">
+        </div>
+
+        <div class="main_allow" id="allow_input">
+            <p >
+                <label for="ashift">Afternoon Shift:</label>
+                <input class="bs_input" id="ashift" placeholder="total points">
+            </p>
+            <p>
+                <label for="nshift">Night Shift</label>
+                <input class="bs_input" id="nshift" placeholder="total points">
+            </p>
+                     
+        </div>
+
+        <div class="main_ot" id="day_ot">
+            <p>
+                <label for="hday">Holiday hours</label>
+                <input class="bs_input" id="hday" placeholder="total hours">
+            </p>
+            <p>
+                <label for="Sat_day">Saturday hours</label>
+                <input class="bs_input" id="Sat_day" placeholder="total hours">
+            </p>
+            <p>
+                <label for="sun_day">Sunday Hours</label>
+                <input class="bs_input" id="sun_day" placeholder="total hours">
+            </p>
+            <p>
+                <label for="wk_day">Weekday hours</label>
+                <input class="bs_input" id="wk_day" placeholder="total hours">
+            </p>
+            
+        </div>
+
+        <div class="loan_sec">
+            <label for="loan">Loan</label>
+            <input type="radio" class="radio" id="loan">
+        </div>
+
+            <div class="loan_select">
+                <label>Load Type</label>
+                <p class="option">
+                    <select name="option" id="option">                        
+                        <option value="cash">Cash Loan</option>
+                        <option value="Hire">Hire Purchase</option>
+                        <option value="School">School Fees</option>
+                        <option value="quick">quick Loan</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="loan_data">
+
+                 <p>
+                    <label for="lamt">Amount:</label>
+                    <input class="loan" id="lamt" required placeholder="value of cash or item">
+                </p>
+                <p>
+                    <label for="ldate">Initial Date:</label>
+                    <input type="date" id="ldate" class="loan" required>
+                </p>
+                <p>
+                    <label for="period">Duration:</label>
+                    <input class="loan" id="period" required placeholder="loan period">
+                </p>
+
+
+
+            </div>
+               
+
+        </div>
+
+        <div class="btn">
+            <button class="btn_sub">Submit</button>
+            <button class="btn_can">Cancel</button>
+        </div>
+    </div>
+    <!-- <script type="module" src="/js/net_funct.js"></script> -->
+    <script src="/js/net_funct.js"></script>
+</body>
+</html>
