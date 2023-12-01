@@ -1,0 +1,44 @@
+.title{
+    text-align: center;
+}
+
+ .title h4{
+    font-size: 20px;
+ }
+
+ .main_allow p,
+ .main_ot p, .sat p, 
+ .loan_data p,
+ .loan_select p,
+ .net p{
+    margin: 8px;
+ }
+
+ input{
+    height: 2.5rem;
+    border-radius: 4rem;
+    border: none;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+ }
+.loan_data{
+    display: none;
+}
+
+.net label,
+.gross label{
+    font-size: 20px;
+    padding: 10px;
+    width: 13rem;
+}
+
+.btnOk{
+    height: 3.5rem;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: darkgreen;
+    color: goldenrod;
+    border: none;
+    border-radius: 0.5rem;
+}

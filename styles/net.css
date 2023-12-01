@@ -8,7 +8,6 @@ div .theme{
     padding: 20px;
     line-height: 20px;
     margin-bottom: 2rem;
-
 }
 
 div .main_ot{
@@ -36,17 +35,7 @@ div .main_ot{
 }
 
 
-p{
-    margin: 0;
-    display: flex;
-}
 
-p label{
-    display: inline-block;
-    width: 10rem ;
-    margin-right: 20px;
-    font-weight: bold;
-}
 
 .bs_input, .loan{
     height: 2.5rem;
