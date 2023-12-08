@@ -17,11 +17,16 @@ div .main_ot{
 .basic{
     display: flex;
     align-items: center;
+  
 }
+
 .basic label{
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
+}
+.bs_input1{
+    text-align: center;
 }
 
 .basic .bs_input1{
@@ -30,11 +35,9 @@ div .main_ot{
     border-radius: 40px;
     font-size: 20px;
     font-weight: bold; 
-    margin: 7px;  
+    margin: 7px;
 
 }
-
-
 
 
 .bs_input, .loan{
@@ -46,7 +49,7 @@ div .main_ot{
     border-radius: 40px;
     font-size: 16px;
     font-weight: bold;
-    text-align: right;    
+    text-align: center;    
 
 }
 ::placeholder{
@@ -89,6 +92,12 @@ div .main_ot{
     font-size: 18px;
     font-weight: bold;
 }
+
+.loan_data, .loan_select{
+    display: none;
+}
+
+
 
 /*button style*/
 

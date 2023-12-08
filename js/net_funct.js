@@ -1,144 +1,71 @@
-const salaryEl = document.getElementById('basic')
-const salary = salaryEl.value
-const ashiftEl = document.getElementById('ashift')
-const Afternoon = ashiftEl.value
-const nshiftEl = document.getElementById('nshift')
-const night = nshiftEl.value
-const hdayEl = document.getElementById('hday')
-const holiday = hdayEl.value
-const sat_otEl = document.getElementById('Sat_day')
-const saturday = sat_otEl.value
-const sun_otEl = document.getElementById('sun_day')
-const sunday = sun_otEl.value
-const wk_otEl = document.getElementById('wk_day')
-const weekday = wk_otEl.value
-const loanSelect = document.getElementById('option')
-const loanType = loanSelect.value
-const loan_amount = document.getElementById('lamt')
-const amount = loan_amount.value
-const loan_date = document.getElementById('ldate')
-const date = loan_date.value
-const loan_period = document.getElementById('period')
-const period = loan_period
-
-//buttons
-const btnSub = document.querySelector('.btn_sub')
+const Submit = document.querySelector('.btn_sub')
 
 let myStorage = []
+let result = '';
 
+Submit.addEventListener('click', function(){   
+    const Salary = document.querySelector(".bs_input1").value
+    const Afternoon = document.querySelector("#ashift").value
+    const Night = document.querySelector("#nshift").value
+    const Holiday = document.querySelector("#hday").value
+    const Saturday = document.querySelector("#sat_day").value
+    const Sunday = document.querySelector("#sun_day").value
+    const Weekday = document.querySelector("#wk_day").value
+    const loanRadio = document.querySelector(".radio").value
+    const loanDiv = document.querySelector(".loan_sec")
+    const loan = document.querySelector(".loan_data")
 
-btnSub.addEventListener('click', () => {
-    if(salary == '' || salary == 0) {        
-        alert('Provide salary')
+    if(Salary == " " || Salary== 0){
+        alert("Provide Basic salary")   
     }else{
-        myStorage.push(salaryEl.value)
-        localStorage.setItem("salary", JSON.stringify(myStorage))
+        myStorage.push(Salary)
+        localStorage.setItem("salary",JSON.stringify(Salary))
 
         if(Afternoon){
-            myStorage.push(Afternoon)
-            localStorage.setItem("afternoon", JSON.stringify(myStorage))
+            result = Math.floor((Afternoon * Salary * 3.5)/432.5).toFixed(2)
+            myStorage.push(result)
+            localStorage.setItem("afternoon", JSON.stringify(result))
         }
 
-        if(night){
-            myStorage.push(night)
-            localStorage.setItem("night", JSON.stringify(myStorage))
+        if(Night){
+            result = Math.floor((Night * Salary * 3.5)/216.24).toFixed(2)
+            myStorage.push(result)
+            localStorage.setItem("night", JSON.stringify(result))
+        }
+        if(Holiday){
+            result = Math.floor((Holiday * Salary)/173 * 2).toFixed(2)
+            myStorage.push(result)
+            localStorage.setItem("holiday", JSON.stringify(result))
+        }
+        if(Saturday){
+            result = Math.floor((Saturday * Salary)/173 * 2).toFixed(2)
+            myStorage.push(result)
+            localStorage.setItem("saturday", JSON.stringify(result))
+        }
+        if(Sunday){
+            result = Math.floor((Sunday * Salary)/173 * 2).toFixed(2)
+            myStorage.push(result)
+            localStorage.setItem("sunday", JSON.stringify(result))
+        }
+        if(Weekday){
+            result = Math.floor((Weekday * Salary)/173).toFixed(2)
+            myStorage.push(result)
+            localStorage.setItem("weekday", JSON.stringify(result))
         }
 
-        if(holiday){
-            myStorage.push(holiday)
-            localStorage.setItem("holiday",JSON.stringify(myStorage))
+        if(loanRadio == true){
+            loanDiv = 
+            loan = true
         }
-
-        if(saturday){
-            myStorage.push(saturday)
-            localStorage.push(statusbar)
-            localStorage.setItem("saturday",JSON.stringify(myStorage))
-        }
-        console.log(myStorage)
+        location.href = "summary.html"
     }
 
 
 
-       
-})
 
-    //     if(ashiftEl ){
-    //         myStorage.push(ashiftEl.value)
-    //         localStorage.setItem("Afternoon", JSON.stringify(myStorage))
-    //     }
-    //      console.log(myStorage)
-    
-    //    if(nshiftEl){
-    //     myStorage.push(nshiftEl.value)
-    //     localStorage.setItem("Night", JSON.stringify(myStorage))
-    
-    //    }
-    
-    //    if(hdayEl){
-    //     myStorage.push(hdayEl.value)
-    //     localStorage.setItem("Holiday", JSON.stringify(myStorage))
-    
-    //    }
-    
-    //    if(sat_otEl){
-    //     myStorage.push(sat_otEl.value)
-    //     localStorage.setItem("Saturday", JSON.stringify(myStorage))
-    //    }
-        
-    //    if(sun_otEl){
-    //     myStorage.push(sun_otEl.value)
-    //     localStorage.setItem("Sunday", JSON.stringify(myStorage))
-    //    }
-    
-    //    if(wk_otEl){
-    //     myStorage.push(wk_otEl.value)
-    //     localStorage.setItem("Weekday", JSON.stringify(myStorage))
-    //    }
-    
-    //    if(loanSelect== true){
-    //     myStorage.push(loanSelect.value)
-    //     localStorage.setItem("typeSelect", JSON.stringify(myStorage))
-    //    }
-    
-    //    if(loan_amount){
-    //     myStorage.push(loan_amount.value)
-    //     localStorage.setItem("lamt", JSON.stringify(myStorage))
-    //    }
-    
-    //    if(loan_date){
-    //     myStorage.push(loan_date.value)
-    //     localStorage.setItem("idate", JSON.stringify(myStorage))
-    //    }
-    
-    //    if(loan_period){
-    //     myStorage.push(loan_period.value)
-    //     localStorage.setItem("period", JSON.stringify(myStorage))
-    // }
-        
+    console.log(result)
+    console.log(myStorage)
    
-  // }
-//    console.log(myStorage)
-//    location.href = "summary.html"
-    
- //});
 
-/*
-function inputRules(){
 
-    let salary = " "
-
-    if(salaryEl != " " || salaryEl != 0) {
-        salary = Number(salaryEl).toFixed(2)
-    }else{
-        alert('Please provide salary')
-    }
-
-    if(salaryEl === " " && Ashift != " " ){
-        alert('Please provide salary')
-    } else{
-        let afternoon = (salaryEl * 3.5 * Ashift)/435.7
-
-    }
-    console.log(afternoon)
-}
-*/
+})
