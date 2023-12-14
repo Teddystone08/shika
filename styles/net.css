@@ -1,5 +1,4 @@
-div .theme{
-    text-align: center;
+div .theme{    
     padding: 20px;
 }
 
@@ -15,8 +14,7 @@ div .main_ot{
 }
 
 .basic{
-    display: flex;
-    align-items: center;
+    display: flex; 
   
 }
 

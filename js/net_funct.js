@@ -53,19 +53,14 @@ Submit.addEventListener('click', function(){
             localStorage.setItem("weekday", JSON.stringify(result))
         }
 
-        if(loanRadio == true){
-            loanDiv = 
-            loan = true
-        }
+       
         location.href = "summary.html"
     }
 
 
 
 
-    console.log(result)
-    console.log(myStorage)
-   
+    
 
 
 })
