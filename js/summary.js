@@ -11,8 +11,8 @@ const weekdayOut = document.querySelector("#wk_day-ot")
 window.addEventListener("load", function(){
     setVariable()
     getGross()
-    
-    
+    getOtheAllow()
+      
 })
 
 
@@ -28,6 +28,26 @@ function setVariable() {
 
 
 }
+
+function getOtheAllow() {
+    const canteenOut = document.querySelector("#cant-all")
+    const statAllow = {
+        Canteen: 360,
+        Discomfort: 12/100
+
+    }
+
+    let canteenSum = statAllow.Canteen
+    canteenOut.value = canteenSum.toFixed(2)
+
+    const discomfortOut = document.querySelector("#discom")
+    let discomfort = statAllow.Discomfort * salOut.value
+    discomfortOut.value = discomfort.toFixed(2)
+
+
+
+}
+
 
 function getGross() {
     const inputVals = document.querySelectorAll(".bs_input")
@@ -48,3 +68,4 @@ function getGross() {
 
    
 }
+
