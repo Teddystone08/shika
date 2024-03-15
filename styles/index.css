@@ -8,8 +8,6 @@
 }
 
 .container{
-    min-height: 100vh;
-    min-width: 30vh;
     display: flex;
     flex-direction: column;
     line-height: 20px;
