@@ -7,8 +7,7 @@ window.addEventListener("load", function(){
     getGross()
     getOtheAllow()
     statutoryDed()
-    taxableGross()
-   
+      
       
 })
 
@@ -37,24 +36,7 @@ function setVariable() {
     
 }
 
-function getOtheAllow() {
-        const statAllow = {
-        Canteen: 360,
-        Discomfort: 12/100
 
-    }
-
-    const canteenOut = document.querySelector("#cant-all")
-    let canteenSum = statAllow.Canteen
-    canteenOut.value = canteenSum.toFixed(2)
-
-    
-    const discomfortOut = document.querySelector("#discom")
-    let discomfort = statAllow.Discomfort * salOut
-    discomfortOut.value = discomfort.toFixed(2)
-    
-
-}
 
 function getGross() {
     const inputVals = document.querySelectorAll(".bs_input")
@@ -69,7 +51,7 @@ function getGross() {
 
     }) 
 
-    taxableGross(sum)
+    
   
 }
 
@@ -79,8 +61,8 @@ function statutoryDed(){
         provident: 0.18,
         union_dues:  0.01,
         canteen: 300
-
     }
+
     let ssnit = 0;
     let pf = 0;
     let canteen = 0
@@ -105,15 +87,14 @@ function statutoryDed(){
     union = statDeduct.union_dues * salOut
     unionDuesOut.value = union.toFixed(2)
 
-    taxableGross(ssnit, pf)
-    
+      
 
 }
 
 
-const taxable = document.querySelector("#gross-ded")
 
-console.log(taxableGross())
+
+
 
 
 
