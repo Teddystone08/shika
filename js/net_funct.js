@@ -15,7 +15,7 @@ Submit.addEventListener('click', function(){
     const loanDiv = document.querySelector(".loan_sec")
     const loan = document.querySelector(".loan_data")
 
-    if(Salary == " " || Salary== 0){
+    if(Salary == " " || Salary == 0){
         alert("Provide Basic salary")   
     }else{
         myStorage.push(Salary)
