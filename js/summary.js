@@ -69,16 +69,14 @@ function getGross() {
     const grossSum = document.querySelector("#sum")
     grossSum.value = sum.toFixed(2)
 
-    }) 
-
-    
+    })    
   
 }
 
 function statutoryDed(){
     const statDeduct = {
         ssnit: 0.055,
-        provident: 0.18,
+        provident: 0.081,
         union_dues:  0.01,
         canteen_ded: 300
     }
@@ -113,34 +111,38 @@ function tax(){
 
     const taxRate = {
         first: 0,
-        second: 0.01,
-        third: 0.15,
+        second: 0.05,
+        third: 0.1,
         fourth: 0.175,
         fifth: 0.25,
-        sixth: 0.3
+        sixth: 0.3,
+        seventh: 0.35
     }
 
     let callTax = 0;
 
-    if (taxableOut <= 288){
-        callTax = 0;
-    }else if (taxableOut > 388){
-        let taxCall = taxableOut - 288;
+    if (taxableOut <= 490){
+        callTax = taxRate.first;
+    }else if (taxableOut > 490){
+        let taxCall = taxableOut - 490;
         callTax = taxCall * taxRate.second
-    }else if (taxableOut > 528) {
-        taxCall = taxableOut - 388
+    }else if (taxableOut > 600) {
+        taxCall = taxableOut - 600
         callTax = taxCall * taxRate.third
         
-    }else if (taxableOut > 3528) {
-        taxCall = taxableOut - 3000
+    }else if (taxableOut > 730) {
+        taxCall = taxableOut - 730
         callTax = taxCall * taxRate.fourth
         
-    }else if (taxableOut > 20000) {
-        taxCall = taxableOut - 16472
+    }else if (taxableOut > 3896.67) {
+        taxCall = taxableOut - 3896.67
         callTax = taxCall * taxRate.fifth        
-    }else if (taxableOut > 30000) {
-        taxCall = taxableOut - 16472
-        callTax = taxableOut * taxRate.sixth
+    }else if (taxableOut > 1986.67) {
+        taxCall = taxableOut - 19896.67
+        callTax = taxCall * taxRate.sixth
+    }else if(taxableOut > 50416.67){
+        taxCall = taxableOut - 50416.67
+        callTax = taxCall * taxRate.seventh
     }
 
     taxOutded.value = callTax.toFixed(2)        
@@ -148,7 +150,8 @@ function tax(){
 }
 
 function net(){
-    const stats = document.querySelectorAll("#stat_ded")
+    const grossOut = document.getElementById("sum").value
+    const stats = document.querySelectorAll(".stat_ded")
     const netOut = document.querySelector("#take")
 
     let sum = 0;
@@ -157,7 +160,10 @@ function net(){
         sum += parseInt(stat.value)||0
 
     })
-    console.log(sum)
+
+    let valueNet = grossOut - sum
+    netOut.value = valueNet.toFixed(2)
+    
 }
 
 
