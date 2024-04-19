@@ -2,7 +2,7 @@
 //construct input variables//
 
 
-window.addEventListener("load", function(){
+window.addEventListener("load", () => {
     setVariable()
     allowOut()
     getGross()
@@ -123,26 +123,39 @@ function tax(){
 
     if (taxableOut <= 490){
         callTax = taxRate.first;
-    }else if (taxableOut > 490){
+    }
+    
+    if (taxableOut > 490){
         let taxCall = taxableOut - 490;
-        callTax = taxCall * taxRate.second
-    }else if (taxableOut > 600) {
+        callTax = taxCall * taxRate.second + 0
+    }
+    
+    if (taxableOut >= 600) {
         taxCall = taxableOut - 600
-        callTax = taxCall * taxRate.third
+        callTax = taxCall * taxRate.third + 5.5
         
-    }else if (taxableOut > 730) {
+    }
+    
+    if (taxableOut >= 730) {
         taxCall = taxableOut - 730
-        callTax = taxCall * taxRate.fourth
+        callTax = taxCall * taxRate.fourth + 13.00
         
-    }else if (taxableOut > 3896.67) {
+    }
+    
+    if (taxableOut >= 3166.67) {
         taxCall = taxableOut - 3896.67
-        callTax = taxCall * taxRate.fifth        
-    }else if (taxableOut > 1986.67) {
-        taxCall = taxableOut - 19896.67
-        callTax = taxCall * taxRate.sixth
-    }else if(taxableOut > 50416.67){
+        callTax = taxCall * taxRate.fifth + 554.17 
+              
+    }
+    
+    if (taxableOut >= 1986.67) {
+        taxCall = taxableOut - 1986.67
+        callTax = taxCall * taxRate.sixth + 4000.00
+    }
+    
+    if(taxableOut >= 50416.67){
         taxCall = taxableOut - 50416.67
-        callTax = taxCall * taxRate.seventh
+        callTax = taxCall * taxRate.seventh + 9156.00
     }
 
     taxOutded.value = callTax.toFixed(2)        
@@ -165,6 +178,16 @@ function net(){
     netOut.value = valueNet.toFixed(2)
     
 }
+
+
+const resetBtn = document.querySelector(".btnOk")
+
+resetBtn.addEventListener('click', () => {
+    location.href = "net_cal.html";
+        localStorage.clear();
+
+    })
+
 
 
 
