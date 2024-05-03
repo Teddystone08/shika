@@ -3,6 +3,7 @@
 
 
 window.addEventListener("load", () => {
+
     setVariable()
     allowOut()
     getGross()
@@ -36,13 +37,17 @@ function setVariable() {
     const weekdayOut = document.querySelector("#wk_day-ot")    
     weekdayOut.value = JSON.parse(this.localStorage.getItem("weekday"))
 
+    const conti = document.querySelector("#union-cont")
+    let contri = JSON.parse(this.localStorage.getItem("contribution"))
+    conti.value = contri
+
    
 }
 
 function allowOut(){
     const listAllow = {
         canteen: 360.00,
-        discomfort:0.15
+        discomfort:0.14
     }
 
     const canteenOut = document.querySelector("#cant-all")
@@ -121,45 +126,57 @@ function tax(){
 
     let callTax = 0;
 
-    if (taxableOut <= 490){
+    if (taxableOut <= 490) {
         callTax = taxRate.first;
     }
     
-    if (taxableOut > 490){
-        let taxCall = taxableOut - 490;
-        callTax = taxCall * taxRate.second + 0
+    if (taxableOut > 600) {
+        let taxCall = taxableOut 
+        callTax = taxCall * taxRate.second 
     }
     
-    if (taxableOut >= 600) {
-        taxCall = taxableOut - 600
-        callTax = taxCall * taxRate.third + 5.5
+    if (taxableOut > 730) {
+        taxCall = taxableOut 
+        callTax = taxCall * taxRate.third 
         
     }
     
-    if (taxableOut >= 730) {
-        taxCall = taxableOut - 730
-        callTax = taxCall * taxRate.fourth + 13.00
+    if (taxableOut > 3896.67) {
+        taxCall = taxableOut
+        callTax = taxCall * taxRate.fourth 
         
     }
     
-    if (taxableOut >= 3166.67) {
-        taxCall = taxableOut - 3896.67
-        callTax = taxCall * taxRate.fifth + 554.17 
+    if (taxableOut > 19896.67 ) {
+        taxCall = taxableOut 
+        callTax = taxCall * taxRate.fifth 
               
     }
     
-    if (taxableOut >= 1986.67) {
-        taxCall = taxableOut - 1986.67
-        callTax = taxCall * taxRate.sixth + 4000.00
+    if (taxableOut >= 50416.67) {
+        taxCall = taxableOut
+        callTax = taxCall * taxRate.sixth 
     }
     
     if(taxableOut >= 50416.67){
-        taxCall = taxableOut - 50416.67
-        callTax = taxCall * taxRate.seventh + 9156.00
+        taxCall = taxableOut 
+        callTax = taxCall * taxRate.seventh 
     }
 
     taxOutded.value = callTax.toFixed(2)        
     
+}
+
+function loanDeduct () {
+    const sec_loan = document.querySelector(".loan_select")
+    const loan_amt = document.getElementById("lamt-sum")
+    let reqAmt = JSON.parse(this.localStorage.getItem("request"))
+    if (reqAmt !== " " || 0){
+        sec_loan.style.display = "block"
+    }
+
+
+
 }
 
 function net(){

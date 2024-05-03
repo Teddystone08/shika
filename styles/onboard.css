@@ -1,0 +1,45 @@
+.banner{
+    text-align: center;
+}
+.banner p{
+    margin: 20px;
+}
+.banner img{
+    height: 120px;
+    width: 70px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.main p{
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.main h2{
+    text-align: center;
+}
+
+.btn{
+    height: 100px;
+    width: 80%;
+    font-size: 25px;
+    font-weight: bold;
+    border-end-end-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 5px white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(207, 177, 6);
+    box-shadow: 0 0 5px rgb(207, 177, 6);
+
+}
+
+.foot{
+    text-align: center;
+}
+    
+
+

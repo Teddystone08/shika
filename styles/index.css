@@ -2,39 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: gainsboro;
-    
+    font-family: 'Times New Roman', serif;
+    background-color: rgb(2, 48, 10);
+    color: white;    
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    line-height: 20px;
-    justify-content: baseline;
-}
-
-div{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-    padding: 20px;
-    box-shadow: 0px 0px 10px darkgrey;
-    border: none;
-    
-}
-
-p{
-    margin: 0;
-    display: flex;
-}
-
-p label{
-    display: inline-block;
-    width: 13rem ;
-    margin-right: 20px;
-    margin-top: 5px;
-    font-weight: bold;
-    text-align: left;
+div {
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(207, 177, 6);
+    border: none;    
 }

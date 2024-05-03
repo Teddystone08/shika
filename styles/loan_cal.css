@@ -1,0 +1,38 @@
+.container{
+    text-align: center;
+    font-size: 16px;
+
+}
+
+select{
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loan_data p{
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.loan_data label{
+    margin-right: 50px;
+}
+
+input{
+    height: 40px;
+}
+
+input[type=button]{
+    height: 60px;
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    font-size: larger;
+}
+
+::placeholder{
+    text-align: center;
+}
