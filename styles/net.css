@@ -9,8 +9,9 @@ div .theme{
     margin-bottom: 2rem;
 }
 
-div .main_ot{
+div .main_ot, .gpea-cont{
     height: 17rem;
+    display: none;
 }
 
 .basic{
@@ -93,9 +94,8 @@ div .main_ot{
 }
 
 .loan_data, .loan_select{
-    display:
+    display: none;
 }
-
 
 
 /*button style*/
@@ -113,8 +113,7 @@ button{
     font-size: 20px;
     font-weight: bold;
     border: none;
-    border-radius: 0.5rem;
-    
+    border-radius: 0.5rem;    
   
 }
 
@@ -125,6 +124,6 @@ button{
 }
 
 .btn_can{
-    border: 2px solid darkgreen;
-    color: darkgreen;
+    border: 2px solid gold;
+    color:white;
 }

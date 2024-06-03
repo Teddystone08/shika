@@ -22,7 +22,7 @@
     background-color: lightgoldenrodyellow;
     color: black;
  }
-.loan_data{
+.loan_data, .main_ot, .loan_select{
     display:none;
 }
 

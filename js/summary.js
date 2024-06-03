@@ -171,7 +171,7 @@ function loanDeduct () {
     const sec_loan = document.querySelector(".loan_select")
     const loan_amt = document.getElementById("lamt-sum")
     let reqAmt = JSON.parse(this.localStorage.getItem("request"))
-    if (reqAmt !== " " || 0){
+    if (!reqAmt || 0){
         sec_loan.style.display = "block"
     }
 
