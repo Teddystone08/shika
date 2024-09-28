@@ -13,12 +13,14 @@
             <h2>Loan Calculator</h2>
         </div>
 
-        <div class="theme" id="topic">
-            <h4>loan request</h4>
+        <div class="dash_btn" id="btn=switch">
+            <input type="Button" onclick = "net_cal.html" value="Net Calculator" class="toggle">
+            <input type="button" onclick="loan_cal.html" class="toggle" value="Load Calculator" active> 
+                       
         </div>
 
         <div class="loan_select">
-                <label>Load Type</label>
+                
                 <p class="option">
                     <select name="option" id="option">                        
                         <option value="cash loan">Cash Loan</option>
@@ -30,9 +32,8 @@
             </div>
 
             <div class="loan_data">
-
                  <p>
-                    <label for="lamt">Amount:</label>
+                    <label for="lamt">Amount / value:</label>
                     <input class="in_data" id="lamt" required placeholder="cash or item value">
                 </p>
                
@@ -44,7 +45,7 @@
             </div>
 
             <div>
-                <input type="button" value="Submit" >
+                <input type="button" value="Submit" class="btnSubmit" >
                 <input type="button" value="Clear">
             </div>
                

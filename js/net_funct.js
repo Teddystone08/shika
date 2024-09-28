@@ -79,8 +79,6 @@ Submit.addEventListener('click', function(){
 
 
         }
-
-
        
         location.href = "summary.html"
      }   
