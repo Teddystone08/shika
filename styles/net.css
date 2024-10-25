@@ -1,3 +1,7 @@
+
+containe{
+    
+}
 div .theme{    
     padding: 20px;
 }
@@ -8,7 +12,7 @@ div .theme{
     line-height: 20px;
     margin-bottom: 2rem;
 }
-
+.
 div .main_ot, .gpea-cont{
     height: 17rem;
     display: none;
@@ -16,17 +20,19 @@ div .main_ot, .gpea-cont{
 
 .basic{
     display: flex; 
+    flex-direction: column;
   
 }
 
 .basic label{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     padding: 10px;
 }
-
-.bs_input1{
-    text-align: center;
+p label{
+    display: line;
+    height: 5px;
+    width: 50%;
 }
 
 .basic .bs_input1{
@@ -39,7 +45,15 @@ div .main_ot, .gpea-cont{
 
 }
 
+.dash_opt{
+    padding: 20px;
+    height: 60px;
+    
+}
 
+.toggle{
+    
+}
 .bs_input, .loan{
     height: 2.5rem;
     width: 8rem;

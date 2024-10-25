@@ -14,15 +14,15 @@
         </div>
 
         <div class="dash_btn" id="btn=switch">
-            <input type="Button" onclick = "net_cal.html" value="Net Calculator" class="toggle">
-            <input type="button" onclick="loan_cal.html" class="toggle" value="Load Calculator" active> 
+            <input type="Button" value="Net Calculator" class="toggle" id="btn_net">
+            <input type="button" class="toggle" value="Load Calculator" id= "btn_loan" active > 
                        
         </div>
 
         <div class="loan_select">
                 
-                <p class="option">
-                    <select name="option" id="option">                        
+                <p class="option" id="select">
+                    <select name="option" id="option" value="Loan type">                        
                         <option value="cash loan">Cash Loan</option>
                         <option value="Hire purchase">Hire Purchase</option>
                         <option value="School fees">School Fees</option>
@@ -45,7 +45,7 @@
             </div>
 
             <div>
-                <input type="button" value="Submit" class="btnSubmit" >
+                <input type="button" value="Submit" class="btnSubmit" id="btn_submit">
                 <input type="button" value="Clear">
             </div>
                

@@ -1,19 +1,34 @@
-const btnGl = document.querySelector('.btnSubmit');
+window.addEventListener('load', () => {
+dropDown();
+const btnSwitchNet = document.getElementById('btn_net');
+const btnSwitchLoan = document.getElementById('btn_loan');
+const btnSubmit = document.getElementById('btn_submit');
 
-btnGl.addEventListener('click', function() { 
-    console.log('Yes')
-  
-    const drop = document.getElementById(option)
-    let droplist = drop.value
-    if (droplist == 'Hire purchase') {
-     console.log('more')
 
-    }
+   const selectItems = document.getElementById('option') 
+   selectItems.forEach(selectItem => {
+      console.log(selectItem)
+      
+   });
    
 
+
+
+btnSwitchNet.addEventListener('click', function() {
+    location.href = "net_cal.html"
+  
+   
  })
 
+ btnSwitchLoan.addEventListener('click', function() {
+    location.href = "loan_cal.html"
+ } )
+
    
+
+
+
+})
 
 
 

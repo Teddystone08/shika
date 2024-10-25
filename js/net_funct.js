@@ -1,3 +1,21 @@
+
+
+
+    const gtp_switch = document.getElementById('radio_gtp')
+
+    gtp_switch.addEventListener('Click', function () {
+
+        console.log('true')
+        const gtp_div = document.getElementById('gpea-cont')
+
+        gtp_div.style.display = true;
+
+
+    })
+
+
+
+
 const Submit = document.querySelector('.btn_sub')
 
 // let myStorage = []

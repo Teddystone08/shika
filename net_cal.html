@@ -10,22 +10,23 @@
 <body>
     <div class="container">
         <div class="theme" id="app_bar">
-            <h3>Net Calculator</h3>
+            <h3>Net form</h3>
         </div>
 
-        <div class="theme" id="topic">
-            <h4>Net Details</h4>
+        
+        <div class="dash_page" id="switch">
+            <input type="button" value="Loan Calculator">
         </div>
 
         <div class="basic" id="sal">
             <label for="basic">Basic Salary</label>
             <input class="bs_input1" placeholder="raw salary" required id="basic">
+        </div>
 
-            <div class="dash_opt" id="opt">
-                <input type="radio" class="toggle" checked>Gtpea
-                <input type="radio" class="toggle">Over-time 
-                <input type="radio" class="toggle">Loan 
-            </div>
+        <div class="dash_opt" id="opt">
+            <input type="radio" class="toggle" id="radio_gtp">Gtpea
+            <input type="radio" class="toggle" id="radio_Ot">Over-time 
+            
         </div>
 
         <div class="main_allow" id="allow_input">
@@ -40,13 +41,7 @@
             </p>
                      
         </div>
-        <div>
-            <p>
-                <label for="radio">Select to add Overtime</label>
-                <input type="radio" class="radio" name="Select to add Overtime">
-            </p>
-        </div>
-
+        
         <div class="main_ot" id="day_ot">
             <p>
                 <label for="hday">Holiday hours:</label>
