@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/net.css">
+    <link rel="stylesheet" href="/styles/general.css">
     <title>Net Calculator</title>
 </head>
-<body>
-    <div class="container">
+<body class="container">
+    
         <div class="theme" id="app_bar">
             <h3>Net form</h3>
         </div>
 
-        
-        <div class="dash_page" id="switch">
-            <input type="button" value="Loan Calculator">
+        <div class="opt_btn">
+            <div class="dash_page" id="switch">
+                <input type="button" value="Salary">
+            </div>
+            <div class="dash_page" id="switch">
+                <input type="button" value="Loan">
+            </div>
+            <div class="dash_page" id="switch">
+                <input type="button" value="Backpay">
+            </div>
         </div>
 
         <div class="basic" id="sal">
@@ -111,7 +119,6 @@
             <button class="btn_sub">Submit</button>
             <button class="btn_can">Cancel</button>
         </div>
-    </div>
     <!-- <script type="module" src="/js/net_funct.js"></script> -->
     <script src="/js/net_funct.js"></script>
 </body>

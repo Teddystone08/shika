@@ -1,0 +1,16 @@
+.header img{
+    width: 70%;
+    height: 20%;
+    margin: 20px;
+    position: relative;
+    left: 70px;
+}
+.logo img{
+    width: 60%;
+    height: 50%;
+    position: relative;
+    margin-top: 25%;
+    left: 90px;   
+}
+
+

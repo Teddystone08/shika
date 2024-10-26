@@ -1,9 +1,15 @@
 
-containe{
-    
-}
 div .theme{    
     padding: 20px;
+}
+.opt_btn{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+input[button]{
+    height: 80px;
 }
 
 .main{
@@ -12,8 +18,7 @@ div .theme{
     line-height: 20px;
     margin-bottom: 2rem;
 }
-.
-div .main_ot, .gpea-cont{
+.div .main_ot, .gpea-cont{
     height: 17rem;
     display: none;
 }
