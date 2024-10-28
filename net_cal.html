@@ -11,7 +11,7 @@
 <body class="container">
     
         <div class="theme" id="app_bar">
-            <h3>Net form</h3>
+            <h3>Select a Calculator</h3>
         </div>
 
         <div class="opt_btn">
@@ -32,17 +32,23 @@
         </div>
 
         <div class="dash_opt" id="opt">
-            <input type="radio" class="toggle" id="radio_gtp">Gtpea
-            <input type="radio" class="toggle" id="radio_Ot">Over-time 
-            
+            <div>
+                <input type="radio" class="toggle" id="radio_gtp">Deduction
+            </div>
+        
+            <div>
+                <input type="radio" class="toggle" id="radio_Ot">Over-time             
+            </div>
         </div>
 
         <div class="main_allow" id="allow_input">
+            <p><h3>Allowance</h3></p>
             
             <p>
                 <label for="ashift">Afternoon Shift:</label>
                 <input class="bs_input" id="ashift" placeholder="total points">
             </p>
+
             <p>
                 <label for="nshift">Night Shift:</label>
                 <input class="bs_input" id="nshift" placeholder="total points">
@@ -51,6 +57,7 @@
         </div>
         
         <div class="main_ot" id="day_ot">
+            <p> <h3>Over-time</h3></p>
             <p>
                 <label for="hday">Holiday hours:</label>
                 <input class="bs_input" id="hday" placeholder="total hours">
@@ -67,53 +74,56 @@
                 <label for="wk_day">Weekday hours:</label>
                 <input class="bs_input" id="wk_day" placeholder="total hours">
             </p>
+
+
+            <div class="gpea-cont">
+                <p>
+                    <label for="gpea">Gpea:</label>
+                    <input type="text" class="bs_input" id="gpea" placeholder="contributions">
+                </p>
+            </div>
+    
+            <div class="loan_sec">
+                <label for="loan">Loan</label>
+                <input type="radio" class="radio" id="loan">
+            </div>
+    
+                <div class="loan_select">
+                    <label>Load Type</label>
+                    <p class="option">
+                        <select name="option" id="option">                        
+                            <option value="cash loan">Cash Loan</option>
+                            <option value="Hire purchase">Hire Purchase</option>
+                            <option value="School fees">School Fees</option>
+                            <option value="quick loan">quick Loan</option>
+                        </select>
+                    </p>
+                </div>
+    
+                <div class="loan_data">
+    
+                     <p>
+                        <label for="lamt">Amount:</label>
+                        <input class="in_data" id="lamt" required placeholder="value of cash or item">
+                    </p>
+                    <p>
+                        <label for="ldate">Initial Date:</label>
+                        <input type="in_data" id="ldate" class="loan" required>
+                    </p>
+                    <p>
+                        <label for="period">Duration:</label>
+                        <input class="in_data" id="period" required placeholder="loan period">
+                    </p>
+                   
+    
+                </div>
+                   
+    
+            </div>
                         
         </div>
 
-        <div class="gpea-cont">
-            <p>
-                <label for="gpea">Gpea:</label>
-                <input type="text" class="bs_input" id="gpea" placeholder="contributions">
-            </p>
-        </div>
 
-        <div class="loan_sec">
-            <label for="loan">Loan</label>
-            <input type="radio" class="radio" id="loan">
-        </div>
-
-            <div class="loan_select">
-                <label>Load Type</label>
-                <p class="option">
-                    <select name="option" id="option">                        
-                        <option value="cash loan">Cash Loan</option>
-                        <option value="Hire purchase">Hire Purchase</option>
-                        <option value="School fees">School Fees</option>
-                        <option value="quick loan">quick Loan</option>
-                    </select>
-                </p>
-            </div>
-
-            <div class="loan_data">
-
-                 <p>
-                    <label for="lamt">Amount:</label>
-                    <input class="in_data" id="lamt" required placeholder="value of cash or item">
-                </p>
-                <p>
-                    <label for="ldate">Initial Date:</label>
-                    <input type="in_data" id="ldate" class="loan" required>
-                </p>
-                <p>
-                    <label for="period">Duration:</label>
-                    <input class="in_data" id="period" required placeholder="loan period">
-                </p>
-               
-
-            </div>
-               
-
-        </div>
 
         <div class="btn">
             <button class="btn_sub">Submit</button>
