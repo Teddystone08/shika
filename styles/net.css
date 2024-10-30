@@ -16,10 +16,14 @@ div .theme{
 }
 
 input[type="button"]{
-    height: 50px;
-    width: 120px;
+    height: 70px;
+    width: 130px;
     justify-content:space-between;
     border-radius: 10px;
+    font-size: 20px;
+    border: green 2px solid;
+    background-color: green;
+    color: white;
 }
 
 .main{
@@ -108,7 +112,7 @@ h3{
     font-weight: bolder;
     font-size: larger;
 }
-
+/* Loan section */
 .loan_select{
     display: flex;
     flex-direction: column;
@@ -134,21 +138,8 @@ h3{
     margin: auto;
     
 }
-/*
-.loan_data, .loan_select{
-   
-}
-*/
-
 
 /*button style*/
-
-.btn{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 button{
     width: 15rem;
@@ -156,17 +147,18 @@ button{
     font-size: 20px;
     font-weight: bold;
     border: none;
-    border-radius: 0.5rem;    
+    border-radius: 0.5rem; 
+    margin: 10px;  
   
 }
 
 .btn_sub{
     background-color: darkgreen;
     color: white;
-
+    border: 2px solid white;
 }
 
 .btn_can{
-    border: 2px solid gold;
-    color:white;
+    border: 2px solid green;
+    color: green;
 }

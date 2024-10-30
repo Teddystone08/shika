@@ -2,8 +2,14 @@
     text-align: center;
 }
 
+h3{
+    margin: 30px auto;
+    text-align: center;
+}
+
  .title h4{
     font-size: 20px;
+    margin: 30px auto;
  }
 
  .main_allow p,
@@ -11,19 +17,26 @@
  .loan_data p,
  .loan_select p,
  .net p{
-    margin: 8px;
+    margin: 10px auto;
+ }
+
+ label{
+    font-size: 20px;
+    padding: 10px;
+    width: 15rem;
+    float: left;
  }
 
  input{
     height: 2.5rem;
-    border-radius: 4rem;
+    border-radius: 2rem;
     border: none;
     text-align: center;
     background-color: lightgoldenrodyellow;
     color: black;
  }
 .loan_data, .main_ot, .loan_select{
-    display:none;
+    display:;
 }
 
 .net label,
@@ -34,12 +47,13 @@
 }
 
 .btnOk{
-    height: 3.5rem;
+    height: 1.5rem;
+    width: 10rem;
     padding: 1rem;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     background-color: darkgreen;
-    color: goldenrod;
-    border: none;
+    color: white;
+    border: goldenrod 2px solid;
     border-radius: 0.5rem;
 }
