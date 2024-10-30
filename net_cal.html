@@ -83,21 +83,20 @@
                 </p>
             </div>
     
-            <div class="loan_sec">
-                <label for="loan">Loan</label>
-                <input type="radio" class="radio" id="loan">
+            <div class="loan_sec">                
+                <input type="radio" class="toggle" id="loan">Loan
             </div>
     
                 <div class="loan_select">
-                    <label>Load Type</label>
-                    <p class="option">
-                        <select name="option" id="option">                        
-                            <option value="cash loan">Cash Loan</option>
-                            <option value="Hire purchase">Hire Purchase</option>
-                            <option value="School fees">School Fees</option>
-                            <option value="quick loan">quick Loan</option>
-                        </select>
-                    </p>
+                    <label>Select Load Type</label>
+                        <p class="option">
+                            <select name="option" id="option">                        
+                                <option value="cash loan">Cash Loan</option>
+                                <option value="Hire purchase">Hire Purchase</option>
+                                <option value="School fees">School Fees</option>
+                                <option value="quick loan">quick Loan</option>
+                            </select>
+                        </p>
                 </div>
     
                 <div class="loan_data">
@@ -106,10 +105,12 @@
                         <label for="lamt">Amount:</label>
                         <input class="in_data" id="lamt" required placeholder="value of cash or item">
                     </p>
+
                     <p>
                         <label for="ldate">Initial Date:</label>
-                        <input type="in_data" id="ldate" class="loan" required>
+                        <input type="date" id="ldate" class="loan in_data" required>
                     </p>
+
                     <p>
                         <label for="period">Duration:</label>
                         <input class="in_data" id="period" required placeholder="loan period">
