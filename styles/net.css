@@ -33,8 +33,10 @@ input[type="button"]{
     margin-bottom: 2rem;
 }
 
-.div .main_ot, .gpea-cont{
+.main_ot, 
+.gpea-cont{
     height: 17rem;
+    display: none;
     
 }
 
@@ -111,6 +113,7 @@ h3{
     margin-top: 1rem;
     font-weight: bolder;
     font-size: larger;
+    display: none;
 }
 /* Loan section */
 .loan_select{

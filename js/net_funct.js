@@ -1,17 +1,17 @@
 
-
-
     const gtp_switch = document.getElementById('radio_gtp')
+    const over_time = document.getElementById('day_ot')
 
-    gtp_switch.addEventListener('Click', function () {
-
-        console.log('true')
-        const gtp_div = document.getElementById('gpea-cont')
-
-        gtp_div.style.display = true;
-
-
+    gtp_switch.addEventListener("change", function() {
+        if (gtp_switch.checked) {
+            over_time.style.display = 'block';
+            
+        } else {
+            over_time.style.display = 'none';
+        }
     })
+    
+
 
 
 
