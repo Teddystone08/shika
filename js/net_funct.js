@@ -1,18 +1,10 @@
 
-    const gtp_switch = document.getElementById('radio_gtp')
-    const over_time = document.getElementById('day_ot')
+    const gtp_switch = $('#radio_ot');
+    const over_time = $('#day_ot');
 
-    gtp_switch.addEventListener("change", function() {
-        if (gtp_switch.checked) {
-            over_time.style.display = 'block';
-            
-        } else {
-            over_time.style.display = 'none';
-        }
-    })
-    
-
-
+    gtp_switch.change(function() {
+        over_time.toggle(gtp_switch.is(':checked'));
+    });
 
 
 
