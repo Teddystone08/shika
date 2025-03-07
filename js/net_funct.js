@@ -1,14 +1,9 @@
-
-    const gtp_switch = $('#radio_ot');
-    const over_time = $('#day_ot');
-
-    gtp_switch.change(function() {
-        over_time.toggle(gtp_switch.is(':checked'));
-    });
-
-
-
-const Submit = document.querySelector('.btn_sub')
+$(document).ready(function() {
+$(".toggle").click(function() {
+    $(".main_ot").toggle();
+});
+  
+const Submit = document.querySelector(".btn_sub")
 
 // let myStorage = []
 let result = '';
@@ -66,6 +61,7 @@ Submit.addEventListener('click', function(){
             //myStorage.push(result)
             localStorage.setItem("weekday", JSON.stringify(result))
         }
+
 
         if (gp){
             result = gp.toFixed(2)
