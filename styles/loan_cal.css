@@ -21,18 +21,6 @@ select{
     margin-right: 50px;
 }
 
-input{
-    height: 40px;
-}
-
-input[type=button]{
-    height: 60px;
-    width: 150px;
-    padding: 10px;
-    margin: 20px;
-    font-size: larger;
-}
-
 ::placeholder{
     text-align: center;
 }

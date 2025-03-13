@@ -1,8 +1,4 @@
 
-div .theme{    
-    padding: 20px;
-}
-
 .opt_btn{
     display: flex;
     justify-content: space-evenly;
@@ -15,16 +11,6 @@ div .theme{
     padding: 10px;
 }
 
-input[type="button"]{
-    height: 70px;
-    width: 130px;
-    justify-content:space-between;
-    border-radius: 10px;
-    font-size: 20px;
-    border: green 2px solid;
-    background-color: green;
-    color: white;
-}
 
 .main{
     height: 10rem;
@@ -35,15 +21,12 @@ input[type="button"]{
 
 .main_ot, 
 .gpea-cont{
-    height: 17rem;
-    display: ;
-    
+    line-height: 0.5rem;  
 }
 
 .basic{
     display: flex; 
     flex-direction: column;
-  
 }
 
 .basic label{
@@ -53,7 +36,7 @@ input[type="button"]{
 }
 p label{
     float: left;
-    width: 250px;
+    width: 50vw;
 }
 
 .basic .bs_input1{
@@ -115,7 +98,10 @@ h3{
     font-size: larger;
     display: none;
 }
+
+
 /* Loan section */
+
 .loan_select{
     display: flex;
     flex-direction: column;

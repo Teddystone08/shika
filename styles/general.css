@@ -11,5 +11,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: orange 1px;
+   
+}
+
+input[type="button"]{
+    height: 4rem;
+    width: 6rem;    
+    justify-content:space-between;
+    border-radius: 10px;
+    font-size: 100%;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+input{
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
 }
