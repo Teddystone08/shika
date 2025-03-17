@@ -4,21 +4,17 @@
     box-sizing: content-box;
 }
 
-.container{
-    padding: auto;
-    margin: 0 auto;
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-   
 }
 
 input[type="button"]{
     height: 4rem;
     width: 6rem;    
     justify-content:space-between;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     font-size: 100%;
     border: none;
     background-color: green;
@@ -31,4 +27,11 @@ input{
     border: 1px solid black;
     text-align: center;
     color: black;
+    width: auto;
 }
+/*----------------------------------------------------------------
+@media  and (max-width: 513px) {
+    .container
+    
+}
+    \----------------------------------------------------------------

@@ -12,11 +12,12 @@
     <title>Net Calculator</title>
 </head>
 <body class="container">
-    
+    <!--title of the page-->
         <div class="theme" id="app_bar">
-            <h3>Select a Calculator</h3>
+            <h3>Select a Calculator</h3>            
         </div>
 
+    <!--function buttons of the page-->
         <div class="opt_btn">
             <div class="dash_page" id="switch">
                 <input type="button" value="Salary">
@@ -29,21 +30,29 @@
             </div>
         </div>
 
+    <!--basic salary input-->
         <div class="basic" id="sal">
-            <h3>Basic Salary</h3>
-            <input class="bs_input1" placeholder="raw salary" required id="basic">
+            <p class="title">
+                <h3>Basic Salary</h3>
+            </p>
+            
+            <p class="basic_text">
+                <input class="bs_input1" placeholder="raw salary" required id="basic">
+            </p>
+           
         </div>
 
+    <!--different calculators options-->
         <div class="dash_opt" id="opt">
-            <div>
+            <p>
                 <input type="radio" class="toggle" id="radio_gtp">Deduction
-            </div>
+            </p>
         
-            <div>
+            <p>
                 <input type="radio" class="toggle" id="radio_ot">Over-time             
-            </div>
+            </p>
         </div>
-
+    <!--allowance section-->
         <div class="main_allow" id="allow_input">
             <p><h3>Allowance</h3></p>
             
@@ -58,6 +67,7 @@
             </p>
         </div>
         
+    <!--overtime options section-->
         <div class="main_ot" id="day_ot">
             <p> 
                 <h3>Over-time</h3>
@@ -80,7 +90,7 @@
             </p>
         </div>
 
-
+    <!--section for deduction-->
         <div class="gpea-cont">
                 <p>
                     <h3>Deduction(s)</h3>
@@ -96,12 +106,18 @@
                 </p>
 
         </div>
+
+         <!--loan deduction info-->
     
-            <div class="loan_sec">                
-                <input type="radio" class="toggle" id="loan">Loan
+            <div class="loan_sec"> 
+                <p>
+                   <h3> <input type="radio" class="toggle" id="loan">Loan</h3>
+                </p>               
+            </div> 
+            
     
-                <div class="loan_select">
-                    <label>Select Load Type</label>
+            <div class="loan_select">
+                <label>Select Load Type</label>
                         <p class="option">
                             <select name="option" id="option">                        
                                 <option value="cash loan">Cash Loan</option>
@@ -109,10 +125,10 @@
                                 <option value="School fees">School Fees</option>
                                 <option value="quick loan">quick Loan</option>
                             </select>
-                        </p>
-                </div>
+                    </p>
+            </div>
     
-                <div class="loan_data">
+            <div class="loan_data">
     
                      <p>
                         <label for="lamt">Amount:</label>
@@ -128,20 +144,21 @@
                         <label for="period">Duration:</label>
                         <input class="in_data" id="period" required placeholder="loan period">
                     </p>
-                   
-    
-                </div>
-                   
     
             </div>
+            
                         
-        </div>
-
-
 
         <div class="btn">
-            <button class="btn_sub">Submit</button>
-            <button class="btn_can">Cancel</button>
+            <p>
+                <button class="btn_sub">Submit</button>
+                
+            </p>
+
+            <p>
+                <button class="btn_can">Cancel</button>
+            </p>
+            
         </div>
     <script type="module" src="/js/net_funct.js"></script>
     <script src="/js/jquerys.js"></script> 

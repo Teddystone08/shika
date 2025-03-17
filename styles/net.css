@@ -11,51 +11,38 @@
     padding: 10px;
 }
 
-
-.main{
-    height: 10rem;
-    padding: 20px;
-    line-height: 20px;
-    margin-bottom: 2rem;
+.basic p{
+    justify-items: center;
 }
 
 .main_ot, 
-.gpea-cont{
-    line-height: 0.5rem;  
+.gpea-cont,
+.loan_data{
+    line-height: 0.5rem;
+    display: none;  
 }
 
-.basic{
-    display: flex; 
-    flex-direction: column;
-}
 
-.basic label{
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-}
+
 p label{
     float: left;
-    width: 50vw;
+    width: 70%;
+    clear: both;
 }
 
-.basic .bs_input1{
-    height: 3rem;
-    width: 10rem;
-    border-radius: 40px;
-    font-size: 20px;
-    font-weight: bold; 
-    margin: 7px;
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
 }
 
 .dash_opt{
     height: 60px;  
     display: flex;
+    justify-content: center;
 }
 
-.dash_opt div{
-    margin: 20px;
-}
 .main_allow{
     width: auto;
 }
@@ -64,8 +51,6 @@ p label{
     height: 20px;
     width: 20px;
     margin: auto 10px;
-    
-
 }
 
 .bs_input, .loan, .in_data{
@@ -85,69 +70,68 @@ p label{
 
 h3{
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin: 10px;
+    margin: 0.2rem;
 }
+
+/* Loan section */
 
 .loan_sec{
     justify-content: center;
-    text-align: center;
     margin-top: 1rem;
-    font-weight: bolder;
-    font-size: larger;
+    font-weight: bold;
+    font-size: 15px;
     display: none;
 }
 
 
-/* Loan section */
-
 .loan_select{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    display: none;
 }
 
 .loan_select label{
     font-size: 20px;
-    font-weight:100px;
-    margin: 10px;
+    font-weight:bold;
+    text-align: center;
+    
 }
 
 .option select{
     height: 3rem;
     width: 8rem;
-    border-radius: 40px;
+    border-radius: 3%;
     border: none;
     font-size: 18px;
     font-weight: bold;
 }
 
-.loan_data p{
-    margin: auto;
-    
-}
-
 /*button style*/
 
 button{
-    width: 15rem;
+    width: 10rem;
     height: 5rem;
     font-size: 20px;
     font-weight: bold;
     border: none;
     border-radius: 0.5rem; 
     margin: 10px;  
-  
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
 }
 
 .btn_sub{
     background-color: darkgreen;
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .btn_can{
-    border: 2px solid green;
+    border: 1px solid green;
     color: green;
 }
