@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>calculator</title>
-    <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/loan_cal.css">
+    <link rel="stylesheet" href="/styles/general.css">
+
 </head>
 <body>
     <div class="container">
+        <!--display name of the page-->
         <div class="theme" id="app_bar">
             <h2>Loan Calculator</h2>
         </div>
 
-        <div class="dash_btn" id="btn=switch">
-            <input type="Button" value="Net Calculator" class="toggle" id="btn_net">
-            <input type="button" class="toggle" value="Load Calculator" id= "btn_loan" active > 
-                       
+        <!--function buttons of the page-->
+        <div class="opt_btn">
+            <div class="dash_page" id="switch">
+                <input type="button" value="Salary">
+            </div>
+            <div class="dash_page" id="switch_loan">
+                <input type="button" value="Loan">
+            </div>
+            <div class="dash_page" id="switch_backpay">
+                <input type="button" value="back pay">
+            </div>
         </div>
 
         <div class="loan_select">
-                
-                <p class="option" id="select">
-                    <select name="option" id="option" value="Loan type">                        
+            <label>Select Load Type</label>
+                <p class="option">
+                    <select name="option" id="option">                                                 
                         <option value="cash loan">Cash Loan</option>
                         <option value="Hire purchase">Hire Purchase</option>
                         <option value="School fees">School Fees</option>
-                        <option value="quick loan">Quick Loan</option>
+                        <option value="quick loan">quick Loan</option>
                     </select>
                 </p>
-            </div>
+        </div>
 
             <div class="loan_data">
-                 <p>
+                <p>
                     <label for="lamt">Amount / value:</label>
                     <input class="in_data" id="lamt" required placeholder="cash or item value">
                 </p>
-               
+
                 <p>
                     <label for="period">Duration:</label>
                     <input class="in_data" id="period" required placeholder="loan period">
@@ -48,9 +57,8 @@
                 <input type="button" value="Submit" class="btnSubmit" id="btn_submit">
                 <input type="button" value="Clear">
             </div>
-               
 
         </div>
-    <script src="/js/loans.js"></script>
+    <script type="module" src="/js/loan_cal.js"></script>
 </body>
 </html>

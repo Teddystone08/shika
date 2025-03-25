@@ -10,7 +10,7 @@ body{
     justify-content: center;
 }
 
-input[type="button"]{
+input[type="button"] {
     height: 4rem;
     width: 6rem;    
     justify-content:space-between;
@@ -19,6 +19,8 @@ input[type="button"]{
     border: none;
     background-color: green;
     color: white;
+    margin: 1rem;
+    cursor: pointer;
 }
 
 input{
@@ -29,6 +31,32 @@ input{
     color: black;
     width: auto;
 }
+
+.opt_btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px auto; 
+    padding: 5px;   
+}
+
+.loan_select{
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.option select{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 3%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /*----------------------------------------------------------------
 @media  and (max-width: 513px) {
     .container

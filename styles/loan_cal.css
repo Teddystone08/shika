@@ -1,9 +1,14 @@
-.container{
-    text-align: center;
-    font-size: 16px;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0;
+    box-sizing: content-box;
+
 
 }
-
 select{
     height: 50px;
     width: 120px;
@@ -15,12 +20,12 @@ select{
     margin: 20px;
     padding: 20px;
     
+    
 }
 
 .loan_data label{
     margin-right: 50px;
+    float: left;
+    width: 6rem;
 }
 
-::placeholder{
-    text-align: center;
-}

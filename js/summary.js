@@ -16,32 +16,29 @@ window.addEventListener("load", () => {
 
 function setVariable() {
     
-    const salOut = document.querySelector("#sal-sum")
     salOut.value = JSON.parse(this.localStorage.getItem("salary"))
+   
+    afternoon_out.value = JSON.parse(this.localStorage.getItem("afternoon"))
 
-    const aftetnoonOut = document.querySelector("#ashift-all")
-    aftetnoonOut.value = JSON.parse(this.localStorage.getItem("afternoon"))
-
-    const nightOut = document.querySelector("#nshift-all")
+    
     nightOut.value = JSON.parse(this.localStorage.getItem("night"))
 
-    const holidayOut = document.querySelector("#hday-ot")
+    
     holidayOut.value = JSON.parse(this.localStorage.getItem("holiday"))
 
-    const saturdayOut = document.querySelector("#sat_day-ot")
+    
     saturdayOut.value = JSON.parse(this.localStorage.getItem("saturday"))
 
-    const sundayOut = document.querySelector("#sun_day-ot")
+    
     sundayOut.value = JSON.parse(this.localStorage.getItem("sunday"))
 
-    const weekdayOut = document.querySelector("#wk_day-ot")    
+    
     weekdayOut.value = JSON.parse(this.localStorage.getItem("weekday"))
 
-    const conti = document.querySelector("#union-cont")
-    let contri = JSON.parse(this.localStorage.getItem("contribution"))
-    conti.value = contri
-
    
+    let contribution_out = JSON.parse(this.localStorage.getItem("contribution"))
+    contribution.value = contribution_out.toFixed(2)
+
 }
 
 function allowOut(){
@@ -53,10 +50,10 @@ function allowOut(){
     const canteenOut = document.querySelector("#cant-all")
     canteenOut.value = listAllow.canteen.toFixed(2)
 
-    const discOut = document.querySelector("#discom")
+    const discomfort_in = document.querySelector("#discom")
     const salOut = document.getElementById('sal-sum').value
-    let discomf =  listAllow.discomfort * salOut
-    discOut.value = discomf.toFixed(2)
+    let discomfort_out =  listAllow.discomfort * salOut
+    discomfort_in.value = discomfort_out.toFixed(2)
 
     statutoryDed(salOut)
     
@@ -64,6 +61,7 @@ function allowOut(){
 
 
 function getGross() {
+
     const inputVals = document.querySelectorAll(".bs_input")
 
     let sum = 0
@@ -75,7 +73,6 @@ function getGross() {
     grossSum.value = sum.toFixed(2)
 
     })    
-  
 }
 
 function statutoryDed(){

@@ -1,7 +1,4 @@
-//radio button switch
-const ded_on = document.querySelector("#radio_gtp");
-const overtime_on = document.querySelector("#radio_ot");
-const loan_btn = document.querySelector("#loan");
+
 
 //listeners for deduction button switch
 ded_on.addEventListener("change", () => {
@@ -41,18 +38,7 @@ let result = '';
 
 Submit.addEventListener('click', function () {
     const Salary = document.querySelector(".bs_input1").value
-    const Afternoon = document.querySelector("#ashift").value
-    const Night = document.querySelector("#nshift").value
-    const Holiday = document.querySelector("#hday").value
-    const Saturday = document.querySelector("#sat_day").value
-    const Sunday = document.querySelector("#sun_day").value
-    const Weekday = document.querySelector("#wk_day").value
-    const gp = document.querySelector("#gpea").value
-    const loanBtn = document.querySelector("#loan").value
-    const optBtn = document.querySelector("#option").value
-    const loanAmt = document.querySelector("#lamt").value
-    //const sta_Data = document.querySelector("#idate").value
-    const durData = document.querySelector("#period").value
+    
 
     if (Salary == " " || Salary == 0) {
         alert("Provide Basic salary")

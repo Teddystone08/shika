@@ -7,40 +7,34 @@ h3{
     text-align: center;
 }
 
- .title h4{
-    font-size: 20px;
-    margin: 30px auto;
- }
+.basic p,
+.gross p{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
 
  .main_allow p,
  .main_ot p, .sat p, 
  .loan_data p,
- .loan_select p,
- .net p{
+ .loan_select p{
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
  }
 
- label{
+ p label{
     font-size: 20px;
     padding: 10px;
     width: 15rem;
     float: left;
  }
 
- input{
-    height: 2.5rem;
-    border-radius: 2rem;
-    border: none;
-    text-align: center;
-    background-color: lightgoldenrodyellow;
-    color: black;
- }
 
 .loan_data, .main_ot, .loan_select{
     display: none;
 }
 
-.net label,
 .gross label{
     font-size: 20px;
     padding: 10px;
@@ -48,14 +42,6 @@ h3{
     font-weight: bold 
 }
 
-.btnOk{
-    height: 1.5rem;
-    width: 10rem;
-    padding: 1rem;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkgreen;
-    color: white;
-    border: goldenrod 2px solid;
-    border-radius: 0.5rem;
+.net input{
+    display: block;    
 }

@@ -1,10 +1,4 @@
 
-.opt_btn{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5px auto; 
-    padding: 5px;   
-}
 
 .dash_page{
     margin: 10px;
@@ -64,10 +58,6 @@ p{
     text-align: center;
 }
 
-::placeholder{
-    text-align: center;
-}
-
 h3{
     text-align: center;
     font-size: 1.2rem;
@@ -85,12 +75,8 @@ h3{
     display: none;
 }
 
+/*loan_sec option selected*/ 
 
-.loan_select{
-    display: flex;
-    flex-direction: column;
-    display: none;
-}
 
 .loan_select label{
     font-size: 20px;
@@ -99,14 +85,7 @@ h3{
     
 }
 
-.option select{
-    height: 3rem;
-    width: 8rem;
-    border-radius: 3%;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 /*button style*/
 
