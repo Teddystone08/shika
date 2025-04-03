@@ -31,7 +31,9 @@ h3{
  }
 
 
-.loan_data, .main_ot, .loan_select{
+.loan_data, 
+.main_ot 
+{
     display: none;
 }
 
@@ -42,6 +44,12 @@ h3{
     font-weight: bold 
 }
 
-.net input{
-    display: block;    
+.net_output{
+    display: flex; 
+    justify-content: center;   
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
 }

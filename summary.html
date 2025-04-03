@@ -9,7 +9,7 @@
     <title>Summary</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
 
         <!--title of the page-->
         <div class="title">
@@ -116,11 +116,7 @@
                     <input class = "sel" id = "select" readonly>
                 </p>
                 
-            </div>
-         
-            <div class="loan_data">
-         
-                 <p>
+                <p>
                     <label for="lamt-sum">Amount:</label>
                     <input class="loan" id="lamt-sum" readonly>
                 </p>
@@ -150,23 +146,27 @@
                     <input class="loan" id="left" readonly>
                 </p>
          
-         
             </div>
 
             <div class="net">
-                    <h3>Net:</h3>                       
-                    <input readonly class="net_input" id="take">
-            </div>
+                    <h3>Net:</h3>
+                    <p class="net_output">
+                        <input readonly class="net_input" id="take">
+                    </p>                       
+                    
          
             <div class="btn">
                 <p>
-                    <button class="btnOk">Ok</button>
+                    <input type="button" value="Ok" class="ok" id="ok">
                 </p>
                 
             </div>
         
 
+        </div>
     </div>
     <script type="module" src="/js/summary.js"></script>
 </body>
+
+
 </html>

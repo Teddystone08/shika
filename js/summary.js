@@ -1,43 +1,24 @@
+import { salary_Out, afternoon_out, nightOut, holidayOut, saturdayOut, sundayOut, weekdayOut, associationOut } from "./all_selectors.js";
+import { discomfortOut, association_dues, grossOut } from "./all_selectors.js";
 
 //construct input variables//
-
-
 window.addEventListener("load", () => {
+
 
     setVariable()
     allowOut()
-    getGross()
-    statutoryDed() 
-    tax()
-    net()
+   // getGross()
+   // statutoryDed() 
+   // tax()
+   // net()
+    //loanDeduct()
       
 })
 
 
 function setVariable() {
     
-    salOut.value = JSON.parse(this.localStorage.getItem("salary"))
-   
-    afternoon_out.value = JSON.parse(this.localStorage.getItem("afternoon"))
-
     
-    nightOut.value = JSON.parse(this.localStorage.getItem("night"))
-
-    
-    holidayOut.value = JSON.parse(this.localStorage.getItem("holiday"))
-
-    
-    saturdayOut.value = JSON.parse(this.localStorage.getItem("saturday"))
-
-    
-    sundayOut.value = JSON.parse(this.localStorage.getItem("sunday"))
-
-    
-    weekdayOut.value = JSON.parse(this.localStorage.getItem("weekday"))
-
-   
-    let contribution_out = JSON.parse(this.localStorage.getItem("contribution"))
-    contribution.value = contribution_out.toFixed(2)
 
 }
 
@@ -47,16 +28,11 @@ function allowOut(){
         discomfort:0.14
     }
 
-    const canteenOut = document.querySelector("#cant-all")
     canteenOut.value = listAllow.canteen.toFixed(2)
-
-    const discomfort_in = document.querySelector("#discom")
-    const salOut = document.getElementById('sal-sum').value
     let discomfort_out =  listAllow.discomfort * salOut
     discomfort_in.value = discomfort_out.toFixed(2)
 
-    statutoryDed(salOut)
-    
+    statutoryDed(salary_Out)   
 }
 
 
