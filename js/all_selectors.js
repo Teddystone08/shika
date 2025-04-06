@@ -2,6 +2,10 @@
 export const deduction_on = document.querySelector("#radio_gtp");
 export const overtime_on = document.querySelector("#radio_ot");
 export const loan_btn = document.querySelector("#loan");
+export const back_pay_btn = document.querySelector("#backpay_page")
+
+
+
 
 //input selectors for net
 export const Salary = document.querySelector(".bs_input1")
@@ -56,11 +60,11 @@ export const salary_page_btn = document.querySelector("#salary_page_btn")
 export const loan_page_btn = document.querySelector("#loan_page_btn")
 export const summary_page_btn = document.querySelector("#ok")
 export const Submit = document.querySelector(".btn_sub")
-//export const back_pay_btn = document.querySelector("#backpay_page")
+export const resetBtn = document.querySelector(".btnOk")
 
-export 
 
-export 
+
+
 
 // Define constants for URLs
 export const URLS = {

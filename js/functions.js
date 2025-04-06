@@ -1,28 +1,51 @@
-import { salary_Out, afternoon_out, nightOut, holidayOut, saturdayOut, sundayOut, weekdayOut, associationOut } from "./all_selectors.js";
-import { discomfortOut, association_dues, grossOut } from "./all_selectors.js";
+import { salary_stored, afternoon_stored, night_stored, 
+    saturday_stored, weekend_stored, associate_stored, option_stored, request_stored, duration_stored  } from ./all_stored_called.js
 
-//construct input variables//
-window.addEventListener("load", () => {
+    //all functions group//
+
+    export function generateInputForm() {
+        // generate input fields and populate with values from local storage
+        //...
+        const fields = [
+            { label: "salary", type: "number", id: "salary", readonly},
+            { label: "Afternoon", type: "number", id: "aShift", readonly},
+            { label: "Night", type: "number", id: "nShift", readonly},
+            { label: "Saturday", type: "number", id: "satDay", readonly},
+            { label: "Sunday", type: "number", id: "sunDay", readonly},
+            { label: "Weekday", type: "number", id: "wkDay", readonly},
+            { label: "Association", type: "number", id: "association", readonly},
+            { label: "Loan", type: "number", id: "loan", readonly},
+            { label: "Option", type: "number", id: "option", readonly},
+            { label: "Request", type: "number", id: "request", readonly},
+            { label: "Duration", type: "number", id: "duration", readonly}
+
+        ];
+
+        fields.forEach(field => {
+            const input = document.createElement("input")
+            input.type = field.type
+            input.id = field.id
+            document.querySelector("#input-form").appendChild(input)
 
 
-    setVariable()
-    allowOut()
-   // getGross()
-   // statutoryDed() 
-   // tax()
-   // net()
-    //loanDeduct()
-      
-})
-
-
-function setVariable() {
-    
-    
+            const label = document.createElement("label")
+            label.innerText = field.label
+        });
+    }
+export function setVariable() {
+    salary_stored,
+    afternoon_stored,
+    night_stored,
+    saturday_stored,
+    weekend_stored,
+    associate_stored,
+    option_stored,
+    request_stored,
+    duration_stored  
 
 }
 
-function allowOut(){
+export function allowOut(){
     const listAllow = {
         canteen: 360.00,
         discomfort:0.14
@@ -36,7 +59,7 @@ function allowOut(){
 }
 
 
-function getGross() {
+export function getGross() {
 
     const inputVals = document.querySelectorAll(".bs_input")
 
@@ -51,7 +74,7 @@ function getGross() {
     })    
 }
 
-function statutoryDed(){
+export function statutoryDed(){
     const statDeduct = {
         ssnit: 0.055,
         provident: 0.081,
@@ -83,7 +106,7 @@ function statutoryDed(){
    
 }
 
-function tax(){
+export function tax(){
     const taxableOut = document.getElementById("taxable-ded").value
     const taxOutded = document.querySelector("#tax-ded")
 
@@ -140,7 +163,7 @@ function tax(){
     
 }
 
-function loanDeduct () {
+export function loanDeduct () {
     const sec_loan = document.querySelector(".loan_select")
     const loan_amt = document.getElementById("lamt-sum")
     let reqAmt = JSON.parse(this.localStorage.getItem("request"))
@@ -152,7 +175,7 @@ function loanDeduct () {
 
 }
 
-function net(){
+export function net(){
     const grossOut = document.getElementById("sum").value
     const stats = document.querySelectorAll(".stat_ded")
     const netOut = document.querySelector("#take")
@@ -170,13 +193,7 @@ function net(){
 }
 
 
-const resetBtn = document.querySelector(".btnOk")
 
-resetBtn.addEventListener('click', () => {
-    location.href = "net_cal.html";
-        localStorage.clear();
-
-    })
 
 
 
